@@ -1,0 +1,2342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8cfab209ac12806938ed952b852e1652 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8cfab209ac12806938ed952b852e1652" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8cfab209ac12806938ed952b852e1652 = L.map(
+                "map_8cfab209ac12806938ed952b852e1652",
+                {
+                    center: [-1.293340425531915, 36.817234042553196],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_83e8176973e400ed0717b9aa89853f28 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_83e8176973e400ed0717b9aa89853f28.addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+            var marker_786d9534dabdaa55af215e40b36afcf8 = L.marker(
+                [-1.298, 36.791],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_776531ac5c63fffd75c565bce8d30fb4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a03fababc0ad09c5a6052052e999497 = $(`<div id="html_9a03fababc0ad09c5a6052052e999497" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 7<br><b>Recent temperature:</b> from 2019-11-30T23:59:53.055620+00:00 to 2019-11-30T23:59:58.924637+00:00<br><b>values:</b> 24.1, 26, 24.1, 26, 24.1<br><b>Recent humidity:</b> from 2019-11-30T23:59:53.055620+00:00 to 2019-11-30T23:59:58.924637+00:00<br><b>values:</b> 62.1, 59.3, 62.1, 59.3, 62.1<br><b>Recent P0:</b> from 2019-11-30T23:59:52.583925+00:00 to 2019-11-30T23:59:58.477631+00:00<br><b>values:</b> 7, 6, 6.5, 6, 7<br><b>Recent P1:</b> from 2019-11-30T23:59:52.583925+00:00 to 2019-11-30T23:59:58.477631+00:00<br><b>values:</b> 12, 8, 12, 8, 13<br><b>Recent P2:</b> from 2019-11-30T23:59:52.583925+00:00 to 2019-11-30T23:59:58.477631+00:00<br><b>values:</b> 12, 8, 12, 8, 13<br></div>`)[0];
+                popup_776531ac5c63fffd75c565bce8d30fb4.setContent(html_9a03fababc0ad09c5a6052052e999497);
+            
+        
+
+        marker_786d9534dabdaa55af215e40b36afcf8.bindPopup(popup_776531ac5c63fffd75c565bce8d30fb4)
+        ;
+
+        
+    
+    
+            var marker_5607a17b63255feb6a037de2cf6e8046 = L.marker(
+                [-1.298, 36.791],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_17019771ea3e3eadedfb925617768e14 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c99ec58d0441f2c215230c820badf34a = $(`<div id="html_c99ec58d0441f2c215230c820badf34a" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 7<br><b>Recent temperature:</b> from 2019-11-30T23:59:53.055620+00:00 to 2019-11-30T23:59:58.924637+00:00<br><b>values:</b> 24.1, 26, 24.1, 26, 24.1<br><b>Recent humidity:</b> from 2019-11-30T23:59:53.055620+00:00 to 2019-11-30T23:59:58.924637+00:00<br><b>values:</b> 62.1, 59.3, 62.1, 59.3, 62.1<br><b>Recent P0:</b> from 2019-11-30T23:59:52.583925+00:00 to 2019-11-30T23:59:58.477631+00:00<br><b>values:</b> 7, 6, 6.5, 6, 7<br><b>Recent P1:</b> from 2019-11-30T23:59:52.583925+00:00 to 2019-11-30T23:59:58.477631+00:00<br><b>values:</b> 12, 8, 12, 8, 13<br><b>Recent P2:</b> from 2019-11-30T23:59:52.583925+00:00 to 2019-11-30T23:59:58.477631+00:00<br><b>values:</b> 12, 8, 12, 8, 13<br></div>`)[0];
+                popup_17019771ea3e3eadedfb925617768e14.setContent(html_c99ec58d0441f2c215230c820badf34a);
+            
+        
+
+        marker_5607a17b63255feb6a037de2cf6e8046.bindPopup(popup_17019771ea3e3eadedfb925617768e14)
+        ;
+
+        
+    
+    
+            var marker_4254d82313e55e2c34b35d2b02db90f7 = L.marker(
+                [-1.253, 36.854],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_1d77f1a1d547d69371a0067f7d4c2f2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_236afba3b48bfa167d535c8f23b332cf = $(`<div id="html_236afba3b48bfa167d535c8f23b332cf" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 20<br><b>Recent temperature:</b> from 2018-05-08T10:39:58.491295+00:00 to 2018-05-08T10:52:44.692356+00:00<br><b>values:</b> 24.5, 24.3, 24.2, 24.2, 24.2<br><b>Recent humidity:</b> from 2018-05-08T10:39:58.491295+00:00 to 2018-05-08T10:52:44.692356+00:00<br><b>values:</b> 66.6, 67.5, 66.5, 66.6, 66.3<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-05-08T10:42:52.626492+00:00 to 2018-05-08T10:55:39.814488+00:00<br><b>values:</b> 11.3, 11.43, 12.7, 13.13, 11.27<br><b>Recent P2:</b> from 2018-05-08T10:42:52.626492+00:00 to 2018-05-08T10:55:39.814488+00:00<br><b>values:</b> 2.3, 2.33, 3.6, 2.6, 3.03<br></div>`)[0];
+                popup_1d77f1a1d547d69371a0067f7d4c2f2d.setContent(html_236afba3b48bfa167d535c8f23b332cf);
+            
+        
+
+        marker_4254d82313e55e2c34b35d2b02db90f7.bindPopup(popup_1d77f1a1d547d69371a0067f7d4c2f2d)
+        ;
+
+        
+    
+    
+            var marker_518073b6617047a974a76296a2c997fd = L.marker(
+                [-1.253, 36.854],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_4944dfe6f0cf1e99b05d9207cf04e83c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d01cb591eb47723cc566ed56361599c = $(`<div id="html_7d01cb591eb47723cc566ed56361599c" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 20<br><b>Recent temperature:</b> from 2018-05-08T10:39:58.491295+00:00 to 2018-05-08T10:52:44.692356+00:00<br><b>values:</b> 24.5, 24.3, 24.2, 24.2, 24.2<br><b>Recent humidity:</b> from 2018-05-08T10:39:58.491295+00:00 to 2018-05-08T10:52:44.692356+00:00<br><b>values:</b> 66.6, 67.5, 66.5, 66.6, 66.3<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-05-08T10:42:52.626492+00:00 to 2018-05-08T10:55:39.814488+00:00<br><b>values:</b> 11.3, 11.43, 12.7, 13.13, 11.27<br><b>Recent P2:</b> from 2018-05-08T10:42:52.626492+00:00 to 2018-05-08T10:55:39.814488+00:00<br><b>values:</b> 2.3, 2.33, 3.6, 2.6, 3.03<br></div>`)[0];
+                popup_4944dfe6f0cf1e99b05d9207cf04e83c.setContent(html_7d01cb591eb47723cc566ed56361599c);
+            
+        
+
+        marker_518073b6617047a974a76296a2c997fd.bindPopup(popup_4944dfe6f0cf1e99b05d9207cf04e83c)
+        ;
+
+        
+    
+    
+            var marker_bca9035017220fed3812d1475bcb806a = L.marker(
+                [-1.306, 36.733],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_8a4b8b0bee93affddad0a6c0c7c02ed6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bffb9c990c58d5aa5fafe4ff18e8a692 = $(`<div id="html_bffb9c990c58d5aa5fafe4ff18e8a692" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 8<br><b>Recent temperature:</b> from 2018-10-16T21:16:20.916593+00:00 to 2018-12-18T15:42:45.178068+00:00<br><b>values:</b> 23.8, 2, 23.8, 23.8, 23.8<br><b>Recent humidity:</b> from 2018-10-16T21:16:20.916593+00:00 to 2018-12-18T15:42:45.178068+00:00<br><b>values:</b> 46.2, 4, 46.2, 46.2, 46.2<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-09-17T15:22:00.811173+00:00 to 2018-09-17T15:31:58.702150+00:00<br><b>values:</b> 11.67, 16.4, 10.57, 9.23, 26.5<br><b>Recent P2:</b> from 2018-09-17T15:22:00.811173+00:00 to 2018-09-17T15:31:58.702150+00:00<br><b>values:</b> 5.3, 7.57, 5.93, 6.07, 6.13<br></div>`)[0];
+                popup_8a4b8b0bee93affddad0a6c0c7c02ed6.setContent(html_bffb9c990c58d5aa5fafe4ff18e8a692);
+            
+        
+
+        marker_bca9035017220fed3812d1475bcb806a.bindPopup(popup_8a4b8b0bee93affddad0a6c0c7c02ed6)
+        ;
+
+        
+    
+    
+            var marker_ad0ebbd9dc4034491b7f5f65209a87de = L.marker(
+                [-1.306, 36.733],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_02373799c75652a3876ed5906f2894cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4390c336fa2320d318088962d7d17f10 = $(`<div id="html_4390c336fa2320d318088962d7d17f10" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 8<br><b>Recent temperature:</b> from 2018-10-16T21:16:20.916593+00:00 to 2018-12-18T15:42:45.178068+00:00<br><b>values:</b> 23.8, 2, 23.8, 23.8, 23.8<br><b>Recent humidity:</b> from 2018-10-16T21:16:20.916593+00:00 to 2018-12-18T15:42:45.178068+00:00<br><b>values:</b> 46.2, 4, 46.2, 46.2, 46.2<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-09-17T15:22:00.811173+00:00 to 2018-09-17T15:31:58.702150+00:00<br><b>values:</b> 11.67, 16.4, 10.57, 9.23, 26.5<br><b>Recent P2:</b> from 2018-09-17T15:22:00.811173+00:00 to 2018-09-17T15:31:58.702150+00:00<br><b>values:</b> 5.3, 7.57, 5.93, 6.07, 6.13<br></div>`)[0];
+                popup_02373799c75652a3876ed5906f2894cb.setContent(html_4390c336fa2320d318088962d7d17f10);
+            
+        
+
+        marker_ad0ebbd9dc4034491b7f5f65209a87de.bindPopup(popup_02373799c75652a3876ed5906f2894cb)
+        ;
+
+        
+    
+    
+            var marker_6566d06e6aad1933770be2a2d18be258 = L.marker(
+                [-1.288, 36.841],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_2e449a9b84c12144a0b8b321c8c63045 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee786cf589f078f05bf6cbf753b3b6c6 = $(`<div id="html_ee786cf589f078f05bf6cbf753b3b6c6" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 16<br><b>Recent temperature:</b> from 2018-06-11T06:42:37.548764+00:00 to 2018-06-11T06:49:11.016049+00:00<br><b>values:</b> 22.5, 22.5, 22.2, 22.2, 22<br><b>Recent humidity:</b> from 2018-06-11T06:42:37.548764+00:00 to 2018-06-11T06:49:11.016049+00:00<br><b>values:</b> 60.7, 60.7, 62.1, 62.1, 62<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-06-11T06:45:23.855783+00:00 to 2018-07-29T20:51:50.887411+00:00<br><b>values:</b> 30.3, 21.1, 21.1, 35.7, 35.7<br><b>Recent P2:</b> from 2018-06-11T06:45:23.855783+00:00 to 2018-07-29T20:51:50.887411+00:00<br><b>values:</b> 26.27, 16.87, 16.87, 20.17, 20.17<br></div>`)[0];
+                popup_2e449a9b84c12144a0b8b321c8c63045.setContent(html_ee786cf589f078f05bf6cbf753b3b6c6);
+            
+        
+
+        marker_6566d06e6aad1933770be2a2d18be258.bindPopup(popup_2e449a9b84c12144a0b8b321c8c63045)
+        ;
+
+        
+    
+    
+            var marker_b826efad55c36105d6f8c87a2540d09d = L.marker(
+                [-1.288, 36.841],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_980caac5fa30c049574d9eada8f50fb9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5d2b8267c428f64d61655a2cabc8973 = $(`<div id="html_a5d2b8267c428f64d61655a2cabc8973" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 16<br><b>Recent temperature:</b> from 2018-06-11T06:42:37.548764+00:00 to 2018-06-11T06:49:11.016049+00:00<br><b>values:</b> 22.5, 22.5, 22.2, 22.2, 22<br><b>Recent humidity:</b> from 2018-06-11T06:42:37.548764+00:00 to 2018-06-11T06:49:11.016049+00:00<br><b>values:</b> 60.7, 60.7, 62.1, 62.1, 62<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-06-11T06:45:23.855783+00:00 to 2018-07-29T20:51:50.887411+00:00<br><b>values:</b> 30.3, 21.1, 21.1, 35.7, 35.7<br><b>Recent P2:</b> from 2018-06-11T06:45:23.855783+00:00 to 2018-07-29T20:51:50.887411+00:00<br><b>values:</b> 26.27, 16.87, 16.87, 20.17, 20.17<br></div>`)[0];
+                popup_980caac5fa30c049574d9eada8f50fb9.setContent(html_a5d2b8267c428f64d61655a2cabc8973);
+            
+        
+
+        marker_b826efad55c36105d6f8c87a2540d09d.bindPopup(popup_980caac5fa30c049574d9eada8f50fb9)
+        ;
+
+        
+    
+    
+            var marker_5268630b129d249d659cc38fd2a5f09b = L.marker(
+                [-1.287, 36.811],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_caba7de4a4ee0e5f2168a20384dbcbc2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ce00877c7e4b6d5936c2145870867fc0 = $(`<div id="html_ce00877c7e4b6d5936c2145870867fc0" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 21<br><b>Recent temperature:</b> from 2019-04-11T13:13:15.185629+00:00 to 2019-04-12T12:28:52.017980+00:00<br><b>values:</b> 29.7, 30.8, 30.8, 30.8, 30.8<br><b>Recent humidity:</b> from 2019-04-11T13:13:15.185629+00:00 to 2019-04-12T12:28:52.017980+00:00<br><b>values:</b> 39, 38.3, 38.5, 38.6, 38.5<br><b>Recent P0:</b> from 2019-04-12T12:20:25.882571+00:00 to 2019-04-12T12:28:50.360122+00:00<br><b>values:</b> 14, 14, 11.6, 9.2, 6<br><b>Recent P1:</b> from 2019-04-12T12:20:25.882571+00:00 to 2019-04-12T12:28:50.360122+00:00<br><b>values:</b> 15, 16, 16.8, 10.8, 10.8<br><b>Recent P2:</b> from 2019-04-12T12:20:25.882571+00:00 to 2019-04-12T12:28:50.360122+00:00<br><b>values:</b> 14.4, 15.2, 16.8, 10.8, 8<br></div>`)[0];
+                popup_caba7de4a4ee0e5f2168a20384dbcbc2.setContent(html_ce00877c7e4b6d5936c2145870867fc0);
+            
+        
+
+        marker_5268630b129d249d659cc38fd2a5f09b.bindPopup(popup_caba7de4a4ee0e5f2168a20384dbcbc2)
+        ;
+
+        
+    
+    
+            var marker_4ac7e747897cf48ec00528f1b20f7b03 = L.marker(
+                [-1.287, 36.811],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_ada8b7f6e71df7895b92b33cb12b8d17 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_528c620518940180633f171de5964082 = $(`<div id="html_528c620518940180633f171de5964082" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 21<br><b>Recent temperature:</b> from 2019-04-11T13:13:15.185629+00:00 to 2019-04-12T12:28:52.017980+00:00<br><b>values:</b> 29.7, 30.8, 30.8, 30.8, 30.8<br><b>Recent humidity:</b> from 2019-04-11T13:13:15.185629+00:00 to 2019-04-12T12:28:52.017980+00:00<br><b>values:</b> 39, 38.3, 38.5, 38.6, 38.5<br><b>Recent P0:</b> from 2019-04-12T12:20:25.882571+00:00 to 2019-04-12T12:28:50.360122+00:00<br><b>values:</b> 14, 14, 11.6, 9.2, 6<br><b>Recent P1:</b> from 2019-04-12T12:20:25.882571+00:00 to 2019-04-12T12:28:50.360122+00:00<br><b>values:</b> 15, 16, 16.8, 10.8, 10.8<br><b>Recent P2:</b> from 2019-04-12T12:20:25.882571+00:00 to 2019-04-12T12:28:50.360122+00:00<br><b>values:</b> 14.4, 15.2, 16.8, 10.8, 8<br></div>`)[0];
+                popup_ada8b7f6e71df7895b92b33cb12b8d17.setContent(html_528c620518940180633f171de5964082);
+            
+        
+
+        marker_4ac7e747897cf48ec00528f1b20f7b03.bindPopup(popup_ada8b7f6e71df7895b92b33cb12b8d17)
+        ;
+
+        
+    
+    
+            var marker_dd1f391c3c168dadc509d48f812ded9b = L.marker(
+                [-1.364, 36.915],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_973009f8ba2a66e86e4f2e8e9719cf50 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab0d42b9625926cc2393270182a34b19 = $(`<div id="html_ab0d42b9625926cc2393270182a34b19" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 60<br><b>Recent temperature:</b> from 2019-11-30T19:13:13.977243+00:00 to 2019-11-30T23:43:53.741383+00:00<br><b>values:</b> 18.4, 19.4, 19.3, 19.1, 19.2<br><b>Recent humidity:</b> from 2019-11-30T19:13:13.977243+00:00 to 2019-11-30T23:43:53.741383+00:00<br><b>values:</b> 95.4, 95.1, 95.3, 94.2, 94.2<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T17:28:58.761250+00:00 to 2019-11-30T23:53:44.788325+00:00<br><b>values:</b> 9.38, 15.68, 13.13, 13.48, 11.63<br><b>Recent P2:</b> from 2019-11-30T17:28:58.761250+00:00 to 2019-11-30T23:53:44.788325+00:00<br><b>values:</b> 6.5, 9.2, 9.1, 8.6, 7.93<br></div>`)[0];
+                popup_973009f8ba2a66e86e4f2e8e9719cf50.setContent(html_ab0d42b9625926cc2393270182a34b19);
+            
+        
+
+        marker_dd1f391c3c168dadc509d48f812ded9b.bindPopup(popup_973009f8ba2a66e86e4f2e8e9719cf50)
+        ;
+
+        
+    
+    
+            var marker_603e6da870562e411320fea088d77c7b = L.marker(
+                [-1.364, 36.915],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_41efb863f22a919049569b68d42db056 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_708bf3c9e19a4c956099bf62a16f67f5 = $(`<div id="html_708bf3c9e19a4c956099bf62a16f67f5" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 60<br><b>Recent temperature:</b> from 2019-11-30T19:13:13.977243+00:00 to 2019-11-30T23:43:53.741383+00:00<br><b>values:</b> 18.4, 19.4, 19.3, 19.1, 19.2<br><b>Recent humidity:</b> from 2019-11-30T19:13:13.977243+00:00 to 2019-11-30T23:43:53.741383+00:00<br><b>values:</b> 95.4, 95.1, 95.3, 94.2, 94.2<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T17:28:58.761250+00:00 to 2019-11-30T23:53:44.788325+00:00<br><b>values:</b> 9.38, 15.68, 13.13, 13.48, 11.63<br><b>Recent P2:</b> from 2019-11-30T17:28:58.761250+00:00 to 2019-11-30T23:53:44.788325+00:00<br><b>values:</b> 6.5, 9.2, 9.1, 8.6, 7.93<br></div>`)[0];
+                popup_41efb863f22a919049569b68d42db056.setContent(html_708bf3c9e19a4c956099bf62a16f67f5);
+            
+        
+
+        marker_603e6da870562e411320fea088d77c7b.bindPopup(popup_41efb863f22a919049569b68d42db056)
+        ;
+
+        
+    
+    
+            var marker_c9c5a3d1b13b6ae20391318bb8f73b3c = L.marker(
+                [-1.29, 36.777],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_daa438a156a8c411d6321e4d63928f01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5495d501317696a9467923e2147434b2 = $(`<div id="html_5495d501317696a9467923e2147434b2" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 30<br><b>Recent temperature:</b> from 2019-10-06T05:31:11.143736+00:00 to 2019-10-06T05:43:48.536922+00:00<br><b>values:</b> 17.6, 17.4, 17.3, 17.3, 17.2<br><b>Recent humidity:</b> from 2019-10-06T05:31:11.143736+00:00 to 2019-10-06T05:43:48.536922+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-10-18T20:40:47.313491+00:00 to 2019-10-18T20:50:54.243549+00:00<br><b>values:</b> 6.23, 11, 6.87, 10.87, 6.83<br><b>Recent P2:</b> from 2019-10-18T20:40:47.313491+00:00 to 2019-10-18T20:50:54.243549+00:00<br><b>values:</b> 3.43, 4.3, 4.3, 4.73, 4.33<br></div>`)[0];
+                popup_daa438a156a8c411d6321e4d63928f01.setContent(html_5495d501317696a9467923e2147434b2);
+            
+        
+
+        marker_c9c5a3d1b13b6ae20391318bb8f73b3c.bindPopup(popup_daa438a156a8c411d6321e4d63928f01)
+        ;
+
+        
+    
+    
+            var marker_f7b0adb411e5f63b32f26ebff30a07da = L.marker(
+                [-1.29, 36.777],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_5261fb17e3d58bca6c9ed0841591193d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_36c65d889f07a952621cef5815d9e9c4 = $(`<div id="html_36c65d889f07a952621cef5815d9e9c4" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 30<br><b>Recent temperature:</b> from 2019-10-06T05:31:11.143736+00:00 to 2019-10-06T05:43:48.536922+00:00<br><b>values:</b> 17.6, 17.4, 17.3, 17.3, 17.2<br><b>Recent humidity:</b> from 2019-10-06T05:31:11.143736+00:00 to 2019-10-06T05:43:48.536922+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-10-18T20:40:47.313491+00:00 to 2019-10-18T20:50:54.243549+00:00<br><b>values:</b> 6.23, 11, 6.87, 10.87, 6.83<br><b>Recent P2:</b> from 2019-10-18T20:40:47.313491+00:00 to 2019-10-18T20:50:54.243549+00:00<br><b>values:</b> 3.43, 4.3, 4.3, 4.73, 4.33<br></div>`)[0];
+                popup_5261fb17e3d58bca6c9ed0841591193d.setContent(html_36c65d889f07a952621cef5815d9e9c4);
+            
+        
+
+        marker_f7b0adb411e5f63b32f26ebff30a07da.bindPopup(popup_5261fb17e3d58bca6c9ed0841591193d)
+        ;
+
+        
+    
+    
+            var marker_b14580df6707b6db02965dc99984356f = L.marker(
+                [-1.293, 36.769],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_cc40e4d225f229a242164e0631c9c3d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_71ec9032ef6f1f54c3453cb3c81fc50c = $(`<div id="html_71ec9032ef6f1f54c3453cb3c81fc50c" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 40<br><b>Recent temperature:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent humidity:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-05-20T13:56:14.709120+00:00 to 2019-05-20T14:06:15.712280+00:00<br><b>values:</b> 1.53, 5.2, 0.57, 0.77, 0.7<br><b>Recent P2:</b> from 2019-05-20T13:56:14.709120+00:00 to 2019-05-20T14:06:15.712280+00:00<br><b>values:</b> 0.7, 0.6, 0.47, 0.77, 0.7<br></div>`)[0];
+                popup_cc40e4d225f229a242164e0631c9c3d4.setContent(html_71ec9032ef6f1f54c3453cb3c81fc50c);
+            
+        
+
+        marker_b14580df6707b6db02965dc99984356f.bindPopup(popup_cc40e4d225f229a242164e0631c9c3d4)
+        ;
+
+        
+    
+    
+            var marker_92fa13a7b72259a4962a33bcef9e596d = L.marker(
+                [-1.293, 36.769],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_a6d7e1427432e1f77b0f7e803bfb127f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9cd2d6803db98d0b0d7d9d8869eb1e22 = $(`<div id="html_9cd2d6803db98d0b0d7d9d8869eb1e22" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 40<br><b>Recent temperature:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent humidity:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-05-20T13:56:14.709120+00:00 to 2019-05-20T14:06:15.712280+00:00<br><b>values:</b> 1.53, 5.2, 0.57, 0.77, 0.7<br><b>Recent P2:</b> from 2019-05-20T13:56:14.709120+00:00 to 2019-05-20T14:06:15.712280+00:00<br><b>values:</b> 0.7, 0.6, 0.47, 0.77, 0.7<br></div>`)[0];
+                popup_a6d7e1427432e1f77b0f7e803bfb127f.setContent(html_9cd2d6803db98d0b0d7d9d8869eb1e22);
+            
+        
+
+        marker_92fa13a7b72259a4962a33bcef9e596d.bindPopup(popup_a6d7e1427432e1f77b0f7e803bfb127f)
+        ;
+
+        
+    
+    
+            var marker_22d36523505d703c253952dcbadf5d41 = L.marker(
+                [-1.291, 36.781],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_c351bc05a481323569f6dd24cb6ce530 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_666e011926e09e0c6d6f76cd1911d677 = $(`<div id="html_666e011926e09e0c6d6f76cd1911d677" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 31<br><b>Recent temperature:</b> from 2019-11-30T23:47:52.734024+00:00 to 2019-11-30T23:58:11.712407+00:00<br><b>values:</b> 21.1, 21, 21, 21, 21<br><b>Recent humidity:</b> from 2019-11-30T23:47:52.734024+00:00 to 2019-11-30T23:58:11.712407+00:00<br><b>values:</b> 88.9, 88.9, 88.6, 89, 89.1<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-07-09T14:12:06.706793+00:00 to 2019-07-09T14:22:07.991431+00:00<br><b>values:</b> 0.1, 0.1, 0.1, 0.1, 0.1<br><b>Recent P2:</b> from 2019-07-09T14:12:06.706793+00:00 to 2019-07-09T14:22:07.991431+00:00<br><b>values:</b> 0.1, 0.1, 0.1, 0.1, 0.1<br></div>`)[0];
+                popup_c351bc05a481323569f6dd24cb6ce530.setContent(html_666e011926e09e0c6d6f76cd1911d677);
+            
+        
+
+        marker_22d36523505d703c253952dcbadf5d41.bindPopup(popup_c351bc05a481323569f6dd24cb6ce530)
+        ;
+
+        
+    
+    
+            var marker_1b94e1ed2b5539b847ecc2d69fbd1c27 = L.marker(
+                [-1.291, 36.781],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_4491d5a5a6928ac9edb47a7852340b8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1015b04e0fb16e346b7e29f3b6c3c408 = $(`<div id="html_1015b04e0fb16e346b7e29f3b6c3c408" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 31<br><b>Recent temperature:</b> from 2019-11-30T23:47:52.734024+00:00 to 2019-11-30T23:58:11.712407+00:00<br><b>values:</b> 21.1, 21, 21, 21, 21<br><b>Recent humidity:</b> from 2019-11-30T23:47:52.734024+00:00 to 2019-11-30T23:58:11.712407+00:00<br><b>values:</b> 88.9, 88.9, 88.6, 89, 89.1<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-07-09T14:12:06.706793+00:00 to 2019-07-09T14:22:07.991431+00:00<br><b>values:</b> 0.1, 0.1, 0.1, 0.1, 0.1<br><b>Recent P2:</b> from 2019-07-09T14:12:06.706793+00:00 to 2019-07-09T14:22:07.991431+00:00<br><b>values:</b> 0.1, 0.1, 0.1, 0.1, 0.1<br></div>`)[0];
+                popup_4491d5a5a6928ac9edb47a7852340b8d.setContent(html_1015b04e0fb16e346b7e29f3b6c3c408);
+            
+        
+
+        marker_1b94e1ed2b5539b847ecc2d69fbd1c27.bindPopup(popup_4491d5a5a6928ac9edb47a7852340b8d)
+        ;
+
+        
+    
+    
+            var marker_2b39ca2153f908caa3d795c94ff8aacb = L.marker(
+                [-1.365, 36.914],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_b170c76f0384e557f4007f18eda2cba7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_79d73d1b5d17d49139e6f4740df62447 = $(`<div id="html_79d73d1b5d17d49139e6f4740df62447" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 61<br><b>Recent temperature:</b> from 2019-11-30T23:48:23.217884+00:00 to 2019-11-30T23:59:04.667729+00:00<br><b>values:</b> 16.89910888671875, 16.7999267578125, 16.89910888671875, 16.7999267578125, 16.89910888671875<br><b>Recent humidity:</b> from 2019-11-30T23:48:23.217884+00:00 to 2019-11-30T23:59:04.667729+00:00<br><b>values:</b> 99.8992919921875, 99.8992919921875, 99.8992919921875, 99.8992919921875, 99.8992919921875<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:48:23.141691+00:00 to 2019-11-30T23:59:04.561540+00:00<br><b>values:</b> 5.096410064697264, 9.582471618652342, 7.171595001220701, 9.490919342041012, 5.187962341308593<br><b>Recent P2:</b> from 2019-11-30T23:48:23.141691+00:00 to 2019-11-30T23:59:04.561540+00:00<br><b>values:</b> 4.577613830566405, 3.295881958007812, 4.180887298583984, 4.089335021972655, 3.478986511230468<br></div>`)[0];
+                popup_b170c76f0384e557f4007f18eda2cba7.setContent(html_79d73d1b5d17d49139e6f4740df62447);
+            
+        
+
+        marker_2b39ca2153f908caa3d795c94ff8aacb.bindPopup(popup_b170c76f0384e557f4007f18eda2cba7)
+        ;
+
+        
+    
+    
+            var marker_551deb195608f708c3cab20e248ac407 = L.marker(
+                [-1.365, 36.914],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_5750d02b1af1e5bfea3e8943f65b49a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d7bc1ce890ef233af807cd3ca86ee05f = $(`<div id="html_d7bc1ce890ef233af807cd3ca86ee05f" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 61<br><b>Recent temperature:</b> from 2019-11-30T23:48:23.217884+00:00 to 2019-11-30T23:59:04.667729+00:00<br><b>values:</b> 16.89910888671875, 16.7999267578125, 16.89910888671875, 16.7999267578125, 16.89910888671875<br><b>Recent humidity:</b> from 2019-11-30T23:48:23.217884+00:00 to 2019-11-30T23:59:04.667729+00:00<br><b>values:</b> 99.8992919921875, 99.8992919921875, 99.8992919921875, 99.8992919921875, 99.8992919921875<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:48:23.141691+00:00 to 2019-11-30T23:59:04.561540+00:00<br><b>values:</b> 5.096410064697264, 9.582471618652342, 7.171595001220701, 9.490919342041012, 5.187962341308593<br><b>Recent P2:</b> from 2019-11-30T23:48:23.141691+00:00 to 2019-11-30T23:59:04.561540+00:00<br><b>values:</b> 4.577613830566405, 3.295881958007812, 4.180887298583984, 4.089335021972655, 3.478986511230468<br></div>`)[0];
+                popup_5750d02b1af1e5bfea3e8943f65b49a7.setContent(html_d7bc1ce890ef233af807cd3ca86ee05f);
+            
+        
+
+        marker_551deb195608f708c3cab20e248ac407.bindPopup(popup_5750d02b1af1e5bfea3e8943f65b49a7)
+        ;
+
+        
+    
+    
+            var marker_0461ffcb1de1a487d1b034aeaa123150 = L.marker(
+                [-1.306, 36.773],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_0f13b88f080b13ad7eddc92b27e75627 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f47b7b461ebd326989f11801f7b68158 = $(`<div id="html_f47b7b461ebd326989f11801f7b68158" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 27<br><b>Recent temperature:</b> from 2019-11-30T23:47:10.704397+00:00 to 2019-11-30T23:58:09.060585+00:00<br><b>values:</b> 17.4, 17.5, 17.5, 17.4, 17.3<br><b>Recent humidity:</b> from 2019-11-30T23:47:10.704397+00:00 to 2019-11-30T23:58:09.060585+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:46:52.817177+00:00 to 2019-11-30T23:58:01.519986+00:00<br><b>values:</b> 19.37, 20.6, 20.2, 19.2, 18.87<br><b>Recent P2:</b> from 2019-11-30T23:46:52.817177+00:00 to 2019-11-30T23:58:01.519986+00:00<br><b>values:</b> 18.77, 20, 19.6, 18.6, 18.27<br></div>`)[0];
+                popup_0f13b88f080b13ad7eddc92b27e75627.setContent(html_f47b7b461ebd326989f11801f7b68158);
+            
+        
+
+        marker_0461ffcb1de1a487d1b034aeaa123150.bindPopup(popup_0f13b88f080b13ad7eddc92b27e75627)
+        ;
+
+        
+    
+    
+            var marker_5f7870b60d0ee2a107bdbb2159eea2ec = L.marker(
+                [-1.306, 36.773],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_a5c415a7eede2ff4c95ad7b5af7e74b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2af1319747c7b38caabb9d6a798f9772 = $(`<div id="html_2af1319747c7b38caabb9d6a798f9772" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 27<br><b>Recent temperature:</b> from 2019-11-30T23:47:10.704397+00:00 to 2019-11-30T23:58:09.060585+00:00<br><b>values:</b> 17.4, 17.5, 17.5, 17.4, 17.3<br><b>Recent humidity:</b> from 2019-11-30T23:47:10.704397+00:00 to 2019-11-30T23:58:09.060585+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:46:52.817177+00:00 to 2019-11-30T23:58:01.519986+00:00<br><b>values:</b> 19.37, 20.6, 20.2, 19.2, 18.87<br><b>Recent P2:</b> from 2019-11-30T23:46:52.817177+00:00 to 2019-11-30T23:58:01.519986+00:00<br><b>values:</b> 18.77, 20, 19.6, 18.6, 18.27<br></div>`)[0];
+                popup_a5c415a7eede2ff4c95ad7b5af7e74b4.setContent(html_2af1319747c7b38caabb9d6a798f9772);
+            
+        
+
+        marker_5f7870b60d0ee2a107bdbb2159eea2ec.bindPopup(popup_a5c415a7eede2ff4c95ad7b5af7e74b4)
+        ;
+
+        
+    
+    
+            var marker_64221fb8aad09371e8cc8cbad6bdfccf = L.marker(
+                [-1.3, 36.785],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_777094727b26a99b3631a11e2f41b50c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2cf3967ed365cd730739fb34629b2644 = $(`<div id="html_2cf3967ed365cd730739fb34629b2644" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 29<br><b>Recent temperature:</b> from 2019-11-30T23:46:53.398080+00:00 to 2019-11-30T23:57:38.983815+00:00<br><b>values:</b> 17.9, 17.9, 17.9, 17.9, 17.9<br><b>Recent humidity:</b> from 2019-11-30T23:46:53.398080+00:00 to 2019-11-30T23:57:38.983815+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:46:46.396185+00:00 to 2019-11-30T23:57:31.840840+00:00<br><b>values:</b> 3.9, 4.97, 5.53, 3.65, 4.47<br><b>Recent P2:</b> from 2019-11-30T23:46:46.396185+00:00 to 2019-11-30T23:57:31.840840+00:00<br><b>values:</b> 3.1, 3.3, 3.15, 3.3, 3.95<br></div>`)[0];
+                popup_777094727b26a99b3631a11e2f41b50c.setContent(html_2cf3967ed365cd730739fb34629b2644);
+            
+        
+
+        marker_64221fb8aad09371e8cc8cbad6bdfccf.bindPopup(popup_777094727b26a99b3631a11e2f41b50c)
+        ;
+
+        
+    
+    
+            var marker_c19290cdf368d9f60c04f38ed8867733 = L.marker(
+                [-1.3, 36.785],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_d74208b7aa4e23a3fea7d6335d5228a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e42f041befcdccb6c419929b9b230ba4 = $(`<div id="html_e42f041befcdccb6c419929b9b230ba4" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 29<br><b>Recent temperature:</b> from 2019-11-30T23:46:53.398080+00:00 to 2019-11-30T23:57:38.983815+00:00<br><b>values:</b> 17.9, 17.9, 17.9, 17.9, 17.9<br><b>Recent humidity:</b> from 2019-11-30T23:46:53.398080+00:00 to 2019-11-30T23:57:38.983815+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:46:46.396185+00:00 to 2019-11-30T23:57:31.840840+00:00<br><b>values:</b> 3.9, 4.97, 5.53, 3.65, 4.47<br><b>Recent P2:</b> from 2019-11-30T23:46:46.396185+00:00 to 2019-11-30T23:57:31.840840+00:00<br><b>values:</b> 3.1, 3.3, 3.15, 3.3, 3.95<br></div>`)[0];
+                popup_d74208b7aa4e23a3fea7d6335d5228a2.setContent(html_e42f041befcdccb6c419929b9b230ba4);
+            
+        
+
+        marker_c19290cdf368d9f60c04f38ed8867733.bindPopup(popup_d74208b7aa4e23a3fea7d6335d5228a2)
+        ;
+
+        
+    
+    
+            var marker_e4a445c31679c31f7b184c08fb208f70 = L.marker(
+                [-1.364, 36.914],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_141427241c4274f7e47870c3beb17587 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_33a7fc4f21805178ef2f69e7cd61869b = $(`<div id="html_33a7fc4f21805178ef2f69e7cd61869b" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 59<br><b>Recent temperature:</b> from 2019-11-29T17:28:15.290722+00:00 to 2019-11-29T17:38:31.492697+00:00<br><b>values:</b> 19.4, 19.4, 19.4, 19.4, 19.4<br><b>Recent humidity:</b> from 2019-11-29T17:28:15.290722+00:00 to 2019-11-29T17:38:31.492697+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-29T17:28:08.978840+00:00 to 2019-11-29T17:38:30.074183+00:00<br><b>values:</b> 15.45, 15.68, 17.27, 18.17, 20.52<br><b>Recent P2:</b> from 2019-11-29T17:28:08.978840+00:00 to 2019-11-29T17:38:30.074183+00:00<br><b>values:</b> 11.63, 12.27, 11.93, 11.63, 11.48<br></div>`)[0];
+                popup_141427241c4274f7e47870c3beb17587.setContent(html_33a7fc4f21805178ef2f69e7cd61869b);
+            
+        
+
+        marker_e4a445c31679c31f7b184c08fb208f70.bindPopup(popup_141427241c4274f7e47870c3beb17587)
+        ;
+
+        
+    
+    
+            var marker_6050b25822d01fd242afbf2ab76fa89c = L.marker(
+                [-1.364, 36.914],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_da366d94f1a851c993191faf1ff7b334 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2386e8b8ab4ba92b2d01b181a667a2b9 = $(`<div id="html_2386e8b8ab4ba92b2d01b181a667a2b9" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 59<br><b>Recent temperature:</b> from 2019-11-29T17:28:15.290722+00:00 to 2019-11-29T17:38:31.492697+00:00<br><b>values:</b> 19.4, 19.4, 19.4, 19.4, 19.4<br><b>Recent humidity:</b> from 2019-11-29T17:28:15.290722+00:00 to 2019-11-29T17:38:31.492697+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-29T17:28:08.978840+00:00 to 2019-11-29T17:38:30.074183+00:00<br><b>values:</b> 15.45, 15.68, 17.27, 18.17, 20.52<br><b>Recent P2:</b> from 2019-11-29T17:28:08.978840+00:00 to 2019-11-29T17:38:30.074183+00:00<br><b>values:</b> 11.63, 12.27, 11.93, 11.63, 11.48<br></div>`)[0];
+                popup_da366d94f1a851c993191faf1ff7b334.setContent(html_2386e8b8ab4ba92b2d01b181a667a2b9);
+            
+        
+
+        marker_6050b25822d01fd242afbf2ab76fa89c.bindPopup(popup_da366d94f1a851c993191faf1ff7b334)
+        ;
+
+        
+    
+    
+            var marker_6069d3702646a06643d6f5d129135e6a = L.marker(
+                [-1.206, 36.781],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_46efd8477c0119713824863f47a6516c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef3632f371330d1f8bb8f56423a60ec7 = $(`<div id="html_ef3632f371330d1f8bb8f56423a60ec7" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 34<br><b>Recent temperature:</b> from 2019-10-04T08:05:06.227750+00:00 to 2019-10-04T08:15:35.274801+00:00<br><b>values:</b> 21.9, 21.9, 22, 22, 21.7<br><b>Recent humidity:</b> from 2019-10-04T08:05:06.227750+00:00 to 2019-10-04T08:15:35.274801+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-10-04T08:07:42.477007+00:00 to 2019-10-11T18:04:38.323320+00:00<br><b>values:</b> 8.15, 10.4, 11.63, 6.47, 10.9<br><b>Recent P2:</b> from 2019-10-04T08:07:42.477007+00:00 to 2019-10-11T18:04:38.323320+00:00<br><b>values:</b> 4.97, 5.15, 5.05, 2.87, 4.5<br></div>`)[0];
+                popup_46efd8477c0119713824863f47a6516c.setContent(html_ef3632f371330d1f8bb8f56423a60ec7);
+            
+        
+
+        marker_6069d3702646a06643d6f5d129135e6a.bindPopup(popup_46efd8477c0119713824863f47a6516c)
+        ;
+
+        
+    
+    
+            var marker_b36b0dbe9db275878c8711d91c96fa06 = L.marker(
+                [-1.206, 36.781],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_3fc7ae703b37262dc29400c872ee4f3e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_01af272e2eba080534417412cd799d97 = $(`<div id="html_01af272e2eba080534417412cd799d97" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 34<br><b>Recent temperature:</b> from 2019-10-04T08:05:06.227750+00:00 to 2019-10-04T08:15:35.274801+00:00<br><b>values:</b> 21.9, 21.9, 22, 22, 21.7<br><b>Recent humidity:</b> from 2019-10-04T08:05:06.227750+00:00 to 2019-10-04T08:15:35.274801+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-10-04T08:07:42.477007+00:00 to 2019-10-11T18:04:38.323320+00:00<br><b>values:</b> 8.15, 10.4, 11.63, 6.47, 10.9<br><b>Recent P2:</b> from 2019-10-04T08:07:42.477007+00:00 to 2019-10-11T18:04:38.323320+00:00<br><b>values:</b> 4.97, 5.15, 5.05, 2.87, 4.5<br></div>`)[0];
+                popup_3fc7ae703b37262dc29400c872ee4f3e.setContent(html_01af272e2eba080534417412cd799d97);
+            
+        
+
+        marker_b36b0dbe9db275878c8711d91c96fa06.bindPopup(popup_3fc7ae703b37262dc29400c872ee4f3e)
+        ;
+
+        
+    
+    
+            var marker_00aeb1c295141fe28f4258fd09a293f9 = L.marker(
+                [-1.327, 36.882],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_7d1d01d22ea5edefae70dcc893042a19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0017584e7c31415a56b2136fe3de5da7 = $(`<div id="html_0017584e7c31415a56b2136fe3de5da7" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 62<br><b>Recent temperature:</b> from 2019-05-05T07:09:40.887673+00:00 to 2019-07-15T12:31:22.554307+00:00<br><b>values:</b> 22.7, 28.6, 28.6, 28.6, 28.6<br><b>Recent humidity:</b> from 2019-05-05T07:09:40.887673+00:00 to 2019-07-15T12:31:22.554307+00:00<br><b>values:</b> 50.3, 48.1, 47.6, 47.6, 47.8<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-05-05T07:09:39.560312+00:00 to 2019-07-15T12:31:20.768138+00:00<br><b>values:</b> 13.9, 3.67, 4.43, 3.97, 1.6<br><b>Recent P2:</b> from 2019-05-05T07:09:39.560312+00:00 to 2019-07-15T12:31:20.768138+00:00<br><b>values:</b> 5.5, 1.7, 1.3, 1.5, 1.27<br></div>`)[0];
+                popup_7d1d01d22ea5edefae70dcc893042a19.setContent(html_0017584e7c31415a56b2136fe3de5da7);
+            
+        
+
+        marker_00aeb1c295141fe28f4258fd09a293f9.bindPopup(popup_7d1d01d22ea5edefae70dcc893042a19)
+        ;
+
+        
+    
+    
+            var marker_a7899086629e7d29a637f62d68967d1c = L.marker(
+                [-1.327, 36.882],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_826e8e247fa022262bcb46b7231a34a1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2e9611c1cbe5533a75afd500f8438c3b = $(`<div id="html_2e9611c1cbe5533a75afd500f8438c3b" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 62<br><b>Recent temperature:</b> from 2019-05-05T07:09:40.887673+00:00 to 2019-07-15T12:31:22.554307+00:00<br><b>values:</b> 22.7, 28.6, 28.6, 28.6, 28.6<br><b>Recent humidity:</b> from 2019-05-05T07:09:40.887673+00:00 to 2019-07-15T12:31:22.554307+00:00<br><b>values:</b> 50.3, 48.1, 47.6, 47.6, 47.8<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-05-05T07:09:39.560312+00:00 to 2019-07-15T12:31:20.768138+00:00<br><b>values:</b> 13.9, 3.67, 4.43, 3.97, 1.6<br><b>Recent P2:</b> from 2019-05-05T07:09:39.560312+00:00 to 2019-07-15T12:31:20.768138+00:00<br><b>values:</b> 5.5, 1.7, 1.3, 1.5, 1.27<br></div>`)[0];
+                popup_826e8e247fa022262bcb46b7231a34a1.setContent(html_2e9611c1cbe5533a75afd500f8438c3b);
+            
+        
+
+        marker_a7899086629e7d29a637f62d68967d1c.bindPopup(popup_826e8e247fa022262bcb46b7231a34a1)
+        ;
+
+        
+    
+    
+            var marker_3a7996924cb694188db33bdbd585d296 = L.marker(
+                [-1.292, 36.821],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_1d2c472b1cb6223febf585bc4a3fb7ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e92a360a5ec72ef76c9211dc7cedc004 = $(`<div id="html_e92a360a5ec72ef76c9211dc7cedc004" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 18<br><b>Recent temperature:</b> from 2019-09-19T09:22:33.123131+00:00 to 2019-09-19T10:11:21.673499+00:00<br><b>values:</b> 27.8, 27.9, 27.7, 26.9, 26.9<br><b>Recent humidity:</b> from 2019-09-19T09:22:33.123131+00:00 to 2019-09-19T10:11:21.673499+00:00<br><b>values:</b> 37.8, 37.5, 37.2, 37.9, 37.4<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-28T06:33:06.292859+00:00 to 2019-11-28T07:01:31.693966+00:00<br><b>values:</b> 21.13, 24, 20.87, 15.87, 17.23<br><b>Recent P2:</b> from 2019-11-28T06:33:06.292859+00:00 to 2019-11-28T07:01:31.693966+00:00<br><b>values:</b> 7.53, 8.83, 7.4, 8.1, 8.2<br></div>`)[0];
+                popup_1d2c472b1cb6223febf585bc4a3fb7ea.setContent(html_e92a360a5ec72ef76c9211dc7cedc004);
+            
+        
+
+        marker_3a7996924cb694188db33bdbd585d296.bindPopup(popup_1d2c472b1cb6223febf585bc4a3fb7ea)
+        ;
+
+        
+    
+    
+            var marker_670a41c3d8b3808e3c651b8173b62a62 = L.marker(
+                [-1.292, 36.821],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_a96df35229f66f96111d365b8e5b36e6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c9fa29c9cb7fca6384edc64245c9f06 = $(`<div id="html_4c9fa29c9cb7fca6384edc64245c9f06" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 18<br><b>Recent temperature:</b> from 2019-09-19T09:22:33.123131+00:00 to 2019-09-19T10:11:21.673499+00:00<br><b>values:</b> 27.8, 27.9, 27.7, 26.9, 26.9<br><b>Recent humidity:</b> from 2019-09-19T09:22:33.123131+00:00 to 2019-09-19T10:11:21.673499+00:00<br><b>values:</b> 37.8, 37.5, 37.2, 37.9, 37.4<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-28T06:33:06.292859+00:00 to 2019-11-28T07:01:31.693966+00:00<br><b>values:</b> 21.13, 24, 20.87, 15.87, 17.23<br><b>Recent P2:</b> from 2019-11-28T06:33:06.292859+00:00 to 2019-11-28T07:01:31.693966+00:00<br><b>values:</b> 7.53, 8.83, 7.4, 8.1, 8.2<br></div>`)[0];
+                popup_a96df35229f66f96111d365b8e5b36e6.setContent(html_4c9fa29c9cb7fca6384edc64245c9f06);
+            
+        
+
+        marker_670a41c3d8b3808e3c651b8173b62a62.bindPopup(popup_a96df35229f66f96111d365b8e5b36e6)
+        ;
+
+        
+    
+    
+            var marker_8ec8b0f59238b3ab525f841a4ad077a7 = L.marker(
+                [-1.322, 36.797],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_6150af043eab9b939ba778855c3988ab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14b9b48a36608abcb3a457294320ed07 = $(`<div id="html_14b9b48a36608abcb3a457294320ed07" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 41<br><b>Recent temperature:</b> from 2019-11-30T23:47:46.849350+00:00 to 2019-11-30T23:59:43.315400+00:00<br><b>values:</b> 19.1, 19.1, 19.2, 19.2, 19.2<br><b>Recent humidity:</b> from 2019-11-30T23:47:46.849350+00:00 to 2019-11-30T23:59:43.315400+00:00<br><b>values:</b> 95.7, 95.7, 95.7, 96.1, 95.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-12-16T16:08:42.378185+00:00 to 2018-12-16T16:18:40.472102+00:00<br><b>values:</b> 23.97, 13.47, 41.8, 23.9, 22<br><b>Recent P2:</b> from 2018-12-16T16:08:42.378185+00:00 to 2018-12-16T16:18:40.472102+00:00<br><b>values:</b> 8.6, 8.43, 20.67, 9.5, 8.9<br></div>`)[0];
+                popup_6150af043eab9b939ba778855c3988ab.setContent(html_14b9b48a36608abcb3a457294320ed07);
+            
+        
+
+        marker_8ec8b0f59238b3ab525f841a4ad077a7.bindPopup(popup_6150af043eab9b939ba778855c3988ab)
+        ;
+
+        
+    
+    
+            var marker_34a436684081317a8a0a33d96ff5b2f8 = L.marker(
+                [-1.322, 36.797],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_0c1303c98802e4a7866940cc0a03a40e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39e965e3a856546e0fa3170ad7c7fc7e = $(`<div id="html_39e965e3a856546e0fa3170ad7c7fc7e" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 41<br><b>Recent temperature:</b> from 2019-11-30T23:47:46.849350+00:00 to 2019-11-30T23:59:43.315400+00:00<br><b>values:</b> 19.1, 19.1, 19.2, 19.2, 19.2<br><b>Recent humidity:</b> from 2019-11-30T23:47:46.849350+00:00 to 2019-11-30T23:59:43.315400+00:00<br><b>values:</b> 95.7, 95.7, 95.7, 96.1, 95.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-12-16T16:08:42.378185+00:00 to 2018-12-16T16:18:40.472102+00:00<br><b>values:</b> 23.97, 13.47, 41.8, 23.9, 22<br><b>Recent P2:</b> from 2018-12-16T16:08:42.378185+00:00 to 2018-12-16T16:18:40.472102+00:00<br><b>values:</b> 8.6, 8.43, 20.67, 9.5, 8.9<br></div>`)[0];
+                popup_0c1303c98802e4a7866940cc0a03a40e.setContent(html_39e965e3a856546e0fa3170ad7c7fc7e);
+            
+        
+
+        marker_34a436684081317a8a0a33d96ff5b2f8.bindPopup(popup_0c1303c98802e4a7866940cc0a03a40e)
+        ;
+
+        
+    
+    
+            var marker_4be50f7ee88f414f6b658815043b3d51 = L.marker(
+                [-1.218, 36.887],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_ffb42fd0f3ceb67a2a327da99104f2ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f78da7e8e0586eed327b730464355681 = $(`<div id="html_f78da7e8e0586eed327b730464355681" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 46<br><b>Recent temperature:</b> from 2019-08-12T16:00:24.952933+00:00 to 2019-08-12T16:10:20.959569+00:00<br><b>values:</b> 21.2, 21.2, 21.2, 21.2, 21.3<br><b>Recent humidity:</b> from 2019-08-12T16:00:24.952933+00:00 to 2019-08-12T16:10:20.959569+00:00<br><b>values:</b> 78.7, 78.6, 77.9, 78.3, 78.3<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-04-22T20:55:11.607168+00:00 to 2019-04-22T21:07:44.193252+00:00<br><b>values:</b> 2.47, 3.4, 0, 0, 0<br><b>Recent P2:</b> from 2019-04-22T20:55:11.607168+00:00 to 2019-04-22T21:07:44.193252+00:00<br><b>values:</b> 2.27, 0.2, 0, 0, 0<br></div>`)[0];
+                popup_ffb42fd0f3ceb67a2a327da99104f2ef.setContent(html_f78da7e8e0586eed327b730464355681);
+            
+        
+
+        marker_4be50f7ee88f414f6b658815043b3d51.bindPopup(popup_ffb42fd0f3ceb67a2a327da99104f2ef)
+        ;
+
+        
+    
+    
+            var marker_70a145d3ee6e6c851109a042b7d8afd6 = L.marker(
+                [-1.218, 36.887],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_7acfaab652aa7a4cbff93afdafbf82d9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7d15c55a9c8fb9d405b7511ddd808738 = $(`<div id="html_7d15c55a9c8fb9d405b7511ddd808738" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 46<br><b>Recent temperature:</b> from 2019-08-12T16:00:24.952933+00:00 to 2019-08-12T16:10:20.959569+00:00<br><b>values:</b> 21.2, 21.2, 21.2, 21.2, 21.3<br><b>Recent humidity:</b> from 2019-08-12T16:00:24.952933+00:00 to 2019-08-12T16:10:20.959569+00:00<br><b>values:</b> 78.7, 78.6, 77.9, 78.3, 78.3<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-04-22T20:55:11.607168+00:00 to 2019-04-22T21:07:44.193252+00:00<br><b>values:</b> 2.47, 3.4, 0, 0, 0<br><b>Recent P2:</b> from 2019-04-22T20:55:11.607168+00:00 to 2019-04-22T21:07:44.193252+00:00<br><b>values:</b> 2.27, 0.2, 0, 0, 0<br></div>`)[0];
+                popup_7acfaab652aa7a4cbff93afdafbf82d9.setContent(html_7d15c55a9c8fb9d405b7511ddd808738);
+            
+        
+
+        marker_70a145d3ee6e6c851109a042b7d8afd6.bindPopup(popup_7acfaab652aa7a4cbff93afdafbf82d9)
+        ;
+
+        
+    
+    
+            var marker_8eddc98ab72d7a1efc219fe400ee5d44 = L.marker(
+                [-1.259, 36.799],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_bfd042162c954d72767135aa3480608e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a7575dd1f020c6b55b8af83384cd48d6 = $(`<div id="html_a7575dd1f020c6b55b8af83384cd48d6" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 6<br><b>Recent temperature:</b> from 2019-02-13T05:40:47.826442+00:00 to 2019-02-13T05:50:48.538623+00:00<br><b>values:</b> 23.8, 23.8, 23.8, 23.8, 23.8<br><b>Recent humidity:</b> from 2019-02-13T05:40:47.826442+00:00 to 2019-02-13T05:50:48.538623+00:00<br><b>values:</b> 53.2, 53.1, 53.1, 53, 53.1<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-04-06T13:46:24.506567+00:00 to 2019-04-06T13:57:59.632776+00:00<br><b>values:</b> 12.3, 5.73, 7.37, 4, 6.97<br><b>Recent P2:</b> from 2019-04-06T13:46:24.506567+00:00 to 2019-04-06T13:57:59.632776+00:00<br><b>values:</b> 2.8, 3.1, 2.93, 2.1, 2.57<br></div>`)[0];
+                popup_bfd042162c954d72767135aa3480608e.setContent(html_a7575dd1f020c6b55b8af83384cd48d6);
+            
+        
+
+        marker_8eddc98ab72d7a1efc219fe400ee5d44.bindPopup(popup_bfd042162c954d72767135aa3480608e)
+        ;
+
+        
+    
+    
+            var marker_ec40d4bcbd273095b566a1f49b9cbd4b = L.marker(
+                [-1.259, 36.799],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_4cb792210633ea91693d69212a9cac01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1e269839392c8fcb02b1f6620c481ef2 = $(`<div id="html_1e269839392c8fcb02b1f6620c481ef2" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 6<br><b>Recent temperature:</b> from 2019-02-13T05:40:47.826442+00:00 to 2019-02-13T05:50:48.538623+00:00<br><b>values:</b> 23.8, 23.8, 23.8, 23.8, 23.8<br><b>Recent humidity:</b> from 2019-02-13T05:40:47.826442+00:00 to 2019-02-13T05:50:48.538623+00:00<br><b>values:</b> 53.2, 53.1, 53.1, 53, 53.1<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-04-06T13:46:24.506567+00:00 to 2019-04-06T13:57:59.632776+00:00<br><b>values:</b> 12.3, 5.73, 7.37, 4, 6.97<br><b>Recent P2:</b> from 2019-04-06T13:46:24.506567+00:00 to 2019-04-06T13:57:59.632776+00:00<br><b>values:</b> 2.8, 3.1, 2.93, 2.1, 2.57<br></div>`)[0];
+                popup_4cb792210633ea91693d69212a9cac01.setContent(html_1e269839392c8fcb02b1f6620c481ef2);
+            
+        
+
+        marker_ec40d4bcbd273095b566a1f49b9cbd4b.bindPopup(popup_4cb792210633ea91693d69212a9cac01)
+        ;
+
+        
+    
+    
+            var marker_ad5fa1d2196051ea8a97c69231cc5b73 = L.marker(
+                [-1.297, 36.743],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_cfc9c244c474c43192429afb0e870a16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5043af9a75a396841849bd6014619b9 = $(`<div id="html_e5043af9a75a396841849bd6014619b9" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 35<br><b>Recent temperature:</b> from 2019-11-30T23:13:35.457691+00:00 to 2019-11-30T23:43:53.736121+00:00<br><b>values:</b> 17.1, 17.1, 17, 17, 17.1<br><b>Recent humidity:</b> from 2019-11-30T23:13:35.457691+00:00 to 2019-11-30T23:43:53.736121+00:00<br><b>values:</b> 99.2, 99.3, 99.3, 99.3, 98.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:13:34.134970+00:00 to 2019-11-30T23:43:46.767930+00:00<br><b>values:</b> 0.2, 0.2, 0.1, 0.2, 0.2<br><b>Recent P2:</b> from 2019-11-30T23:13:34.134970+00:00 to 2019-11-30T23:43:46.767930+00:00<br><b>values:</b> 0.2, 0.2, 0.1, 0.2, 0.2<br></div>`)[0];
+                popup_cfc9c244c474c43192429afb0e870a16.setContent(html_e5043af9a75a396841849bd6014619b9);
+            
+        
+
+        marker_ad5fa1d2196051ea8a97c69231cc5b73.bindPopup(popup_cfc9c244c474c43192429afb0e870a16)
+        ;
+
+        
+    
+    
+            var marker_d86184a061d550e0369714031adfe05f = L.marker(
+                [-1.297, 36.743],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_2ddc4ead2992a3dd3441db64c9f6a9f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c3c981085d919d446cecb5ef3218a3ba = $(`<div id="html_c3c981085d919d446cecb5ef3218a3ba" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 35<br><b>Recent temperature:</b> from 2019-11-30T23:13:35.457691+00:00 to 2019-11-30T23:43:53.736121+00:00<br><b>values:</b> 17.1, 17.1, 17, 17, 17.1<br><b>Recent humidity:</b> from 2019-11-30T23:13:35.457691+00:00 to 2019-11-30T23:43:53.736121+00:00<br><b>values:</b> 99.2, 99.3, 99.3, 99.3, 98.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:13:34.134970+00:00 to 2019-11-30T23:43:46.767930+00:00<br><b>values:</b> 0.2, 0.2, 0.1, 0.2, 0.2<br><b>Recent P2:</b> from 2019-11-30T23:13:34.134970+00:00 to 2019-11-30T23:43:46.767930+00:00<br><b>values:</b> 0.2, 0.2, 0.1, 0.2, 0.2<br></div>`)[0];
+                popup_2ddc4ead2992a3dd3441db64c9f6a9f7.setContent(html_c3c981085d919d446cecb5ef3218a3ba);
+            
+        
+
+        marker_d86184a061d550e0369714031adfe05f.bindPopup(popup_2ddc4ead2992a3dd3441db64c9f6a9f7)
+        ;
+
+        
+    
+    
+            var marker_54ca8a0017b8f74dbc5ee3940bfc967c = L.marker(
+                [-1.291, 36.725],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_f87efba0dfd3c12766858091a9b85be2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_61460195e2030d01b1fe687bb959f1f2 = $(`<div id="html_61460195e2030d01b1fe687bb959f1f2" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 28<br><b>Recent temperature:</b> from 2019-10-04T12:20:19.140528+00:00 to 2019-10-04T12:30:16.816176+00:00<br><b>values:</b> 22.7, 22.7, 22.9, 23, 23.1<br><b>Recent humidity:</b> from 2019-10-04T12:20:19.140528+00:00 to 2019-10-04T12:30:16.816176+00:00<br><b>values:</b> 50.3, 50.4, 50.1, 49.4, 49.5<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-10-04T12:20:17.802115+00:00 to 2019-10-04T12:30:15.371229+00:00<br><b>values:</b> 22.7, 26.25, 20.77, 24.2, 31.08<br><b>Recent P2:</b> from 2019-10-04T12:20:17.802115+00:00 to 2019-10-04T12:30:15.371229+00:00<br><b>values:</b> 15.8, 16.67, 13.98, 16.1, 16.9<br></div>`)[0];
+                popup_f87efba0dfd3c12766858091a9b85be2.setContent(html_61460195e2030d01b1fe687bb959f1f2);
+            
+        
+
+        marker_54ca8a0017b8f74dbc5ee3940bfc967c.bindPopup(popup_f87efba0dfd3c12766858091a9b85be2)
+        ;
+
+        
+    
+    
+            var marker_eaf23c1d60a0041dcb0fb33bfe11fafd = L.marker(
+                [-1.291, 36.725],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_44418d44b1ee426c59b061f56ce820b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_387383bd1cb853a4c01fecf641e92627 = $(`<div id="html_387383bd1cb853a4c01fecf641e92627" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 28<br><b>Recent temperature:</b> from 2019-10-04T12:20:19.140528+00:00 to 2019-10-04T12:30:16.816176+00:00<br><b>values:</b> 22.7, 22.7, 22.9, 23, 23.1<br><b>Recent humidity:</b> from 2019-10-04T12:20:19.140528+00:00 to 2019-10-04T12:30:16.816176+00:00<br><b>values:</b> 50.3, 50.4, 50.1, 49.4, 49.5<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-10-04T12:20:17.802115+00:00 to 2019-10-04T12:30:15.371229+00:00<br><b>values:</b> 22.7, 26.25, 20.77, 24.2, 31.08<br><b>Recent P2:</b> from 2019-10-04T12:20:17.802115+00:00 to 2019-10-04T12:30:15.371229+00:00<br><b>values:</b> 15.8, 16.67, 13.98, 16.1, 16.9<br></div>`)[0];
+                popup_44418d44b1ee426c59b061f56ce820b4.setContent(html_387383bd1cb853a4c01fecf641e92627);
+            
+        
+
+        marker_eaf23c1d60a0041dcb0fb33bfe11fafd.bindPopup(popup_44418d44b1ee426c59b061f56ce820b4)
+        ;
+
+        
+    
+    
+            var marker_0629dcc2fe428823d3744a34d11e8598 = L.marker(
+                [-1.301, 36.754],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_64fd9bcedc2bb9d3de5fb519d8bc1943 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2228e355b02835c8fd61708d426ccc20 = $(`<div id="html_2228e355b02835c8fd61708d426ccc20" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 25<br><b>Recent temperature:</b> from 2018-10-17T09:24:27.831904+00:00 to 2018-10-17T09:34:37.704104+00:00<br><b>values:</b> 24.2, 24.2, 24.2, 24.2, 24.2<br><b>Recent humidity:</b> from 2018-10-17T09:24:27.831904+00:00 to 2018-10-17T09:34:37.704104+00:00<br><b>values:</b> 48.5, 49, 48.5, 48.4, 49.4<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-05-03T03:09:38.949851+00:00 to 2019-05-03T03:19:48.008241+00:00<br><b>values:</b> 0.37, 0.3, 5.93, 0.6, 1.07<br><b>Recent P2:</b> from 2019-05-03T03:09:38.949851+00:00 to 2019-05-03T03:19:48.008241+00:00<br><b>values:</b> 0.37, 0.3, 1.03, 0.6, 1.07<br></div>`)[0];
+                popup_64fd9bcedc2bb9d3de5fb519d8bc1943.setContent(html_2228e355b02835c8fd61708d426ccc20);
+            
+        
+
+        marker_0629dcc2fe428823d3744a34d11e8598.bindPopup(popup_64fd9bcedc2bb9d3de5fb519d8bc1943)
+        ;
+
+        
+    
+    
+            var marker_d8e20572dbc769c946ac458a82ac4ccd = L.marker(
+                [-1.301, 36.754],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_48a191ce144f156c4c0a751a7bb47c31 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cad4b9f3171f77520d6d360b5efd4e6c = $(`<div id="html_cad4b9f3171f77520d6d360b5efd4e6c" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 25<br><b>Recent temperature:</b> from 2018-10-17T09:24:27.831904+00:00 to 2018-10-17T09:34:37.704104+00:00<br><b>values:</b> 24.2, 24.2, 24.2, 24.2, 24.2<br><b>Recent humidity:</b> from 2018-10-17T09:24:27.831904+00:00 to 2018-10-17T09:34:37.704104+00:00<br><b>values:</b> 48.5, 49, 48.5, 48.4, 49.4<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-05-03T03:09:38.949851+00:00 to 2019-05-03T03:19:48.008241+00:00<br><b>values:</b> 0.37, 0.3, 5.93, 0.6, 1.07<br><b>Recent P2:</b> from 2019-05-03T03:09:38.949851+00:00 to 2019-05-03T03:19:48.008241+00:00<br><b>values:</b> 0.37, 0.3, 1.03, 0.6, 1.07<br></div>`)[0];
+                popup_48a191ce144f156c4c0a751a7bb47c31.setContent(html_cad4b9f3171f77520d6d360b5efd4e6c);
+            
+        
+
+        marker_d8e20572dbc769c946ac458a82ac4ccd.bindPopup(popup_48a191ce144f156c4c0a751a7bb47c31)
+        ;
+
+        
+    
+    
+            var marker_9e0bbfa51b2d044f0f0a647ea0e9ae99 = L.marker(
+                [-1.255, 36.694],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_2462d7473bdef33b16e20d2b30254c15 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab11c24bf865a26572280ccc9cd7129e = $(`<div id="html_ab11c24bf865a26572280ccc9cd7129e" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 33<br><b>Recent temperature:</b> from 2019-04-15T08:03:01.218199+00:00 to 2019-04-15T08:13:03.132013+00:00<br><b>values:</b> 24.6, 24.5, 24.5, 24.8, 24.8<br><b>Recent humidity:</b> from 2019-04-15T08:03:01.218199+00:00 to 2019-04-15T08:13:03.132013+00:00<br><b>values:</b> 50.9, 50.7, 51, 50.7, 51.5<br><b>Recent P0:</b> from 2019-04-15T08:42:24.329395+00:00 to 2019-04-15T08:52:23.477060+00:00<br><b>values:</b> 7, 8.6, 7.8, 8, 11<br><b>Recent P1:</b> from 2019-04-15T08:42:24.329395+00:00 to 2019-04-15T08:52:23.477060+00:00<br><b>values:</b> 8.8, 11.2, 8.6, 11.6, 13.6<br><b>Recent P2:</b> from 2019-04-15T08:42:24.329395+00:00 to 2019-04-15T08:52:23.477060+00:00<br><b>values:</b> 8.8, 10.6, 8.6, 10.4, 13.4<br></div>`)[0];
+                popup_2462d7473bdef33b16e20d2b30254c15.setContent(html_ab11c24bf865a26572280ccc9cd7129e);
+            
+        
+
+        marker_9e0bbfa51b2d044f0f0a647ea0e9ae99.bindPopup(popup_2462d7473bdef33b16e20d2b30254c15)
+        ;
+
+        
+    
+    
+            var marker_eecf128e393f3e3f54bdbf3a2e6e03cf = L.marker(
+                [-1.255, 36.694],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_0ba930937ee722e7b3a53a67dabb79c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b54a908acb45645d2581d68e4775f275 = $(`<div id="html_b54a908acb45645d2581d68e4775f275" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 33<br><b>Recent temperature:</b> from 2019-04-15T08:03:01.218199+00:00 to 2019-04-15T08:13:03.132013+00:00<br><b>values:</b> 24.6, 24.5, 24.5, 24.8, 24.8<br><b>Recent humidity:</b> from 2019-04-15T08:03:01.218199+00:00 to 2019-04-15T08:13:03.132013+00:00<br><b>values:</b> 50.9, 50.7, 51, 50.7, 51.5<br><b>Recent P0:</b> from 2019-04-15T08:42:24.329395+00:00 to 2019-04-15T08:52:23.477060+00:00<br><b>values:</b> 7, 8.6, 7.8, 8, 11<br><b>Recent P1:</b> from 2019-04-15T08:42:24.329395+00:00 to 2019-04-15T08:52:23.477060+00:00<br><b>values:</b> 8.8, 11.2, 8.6, 11.6, 13.6<br><b>Recent P2:</b> from 2019-04-15T08:42:24.329395+00:00 to 2019-04-15T08:52:23.477060+00:00<br><b>values:</b> 8.8, 10.6, 8.6, 10.4, 13.4<br></div>`)[0];
+                popup_0ba930937ee722e7b3a53a67dabb79c8.setContent(html_b54a908acb45645d2581d68e4775f275);
+            
+        
+
+        marker_eecf128e393f3e3f54bdbf3a2e6e03cf.bindPopup(popup_0ba930937ee722e7b3a53a67dabb79c8)
+        ;
+
+        
+    
+    
+            var marker_fb4761206155f938a0d84d742a17ca2f = L.marker(
+                [-1.32, 36.885],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_2f1167194285aa4aafb3cd673f9b9999 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ac0dffe62b2b172a2dc21ad609bfabd3 = $(`<div id="html_ac0dffe62b2b172a2dc21ad609bfabd3" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 26<br><b>Recent temperature:</b> from 2018-12-05T13:42:00.917362+00:00 to 2018-12-05T14:04:34.289220+00:00<br><b>values:</b> 23.2, 23.2, 23.2, 23.3, 23.3<br><b>Recent humidity:</b> from 2018-12-05T13:42:00.917362+00:00 to 2018-12-05T14:04:34.289220+00:00<br><b>values:</b> 55.6, 55.5, 55.4, 55.2, 55<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-12-13T14:12:45.489815+00:00 to 2018-12-13T14:22:47.223114+00:00<br><b>values:</b> 634.67, 644.77, 650.27, 651.53, 657.7<br><b>Recent P2:</b> from 2018-12-13T14:12:45.489815+00:00 to 2018-12-13T14:22:47.223114+00:00<br><b>values:</b> 444.53, 429.7, 460.47, 449.97, 487.17<br></div>`)[0];
+                popup_2f1167194285aa4aafb3cd673f9b9999.setContent(html_ac0dffe62b2b172a2dc21ad609bfabd3);
+            
+        
+
+        marker_fb4761206155f938a0d84d742a17ca2f.bindPopup(popup_2f1167194285aa4aafb3cd673f9b9999)
+        ;
+
+        
+    
+    
+            var marker_8fb3f5ea410d38100b7d69f18bbf59e2 = L.marker(
+                [-1.32, 36.885],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_3ff9421b0d2237936f122860507a38b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_995ceaa77f2a4367012e9d0d4263ea05 = $(`<div id="html_995ceaa77f2a4367012e9d0d4263ea05" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 26<br><b>Recent temperature:</b> from 2018-12-05T13:42:00.917362+00:00 to 2018-12-05T14:04:34.289220+00:00<br><b>values:</b> 23.2, 23.2, 23.2, 23.3, 23.3<br><b>Recent humidity:</b> from 2018-12-05T13:42:00.917362+00:00 to 2018-12-05T14:04:34.289220+00:00<br><b>values:</b> 55.6, 55.5, 55.4, 55.2, 55<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-12-13T14:12:45.489815+00:00 to 2018-12-13T14:22:47.223114+00:00<br><b>values:</b> 634.67, 644.77, 650.27, 651.53, 657.7<br><b>Recent P2:</b> from 2018-12-13T14:12:45.489815+00:00 to 2018-12-13T14:22:47.223114+00:00<br><b>values:</b> 444.53, 429.7, 460.47, 449.97, 487.17<br></div>`)[0];
+                popup_3ff9421b0d2237936f122860507a38b6.setContent(html_995ceaa77f2a4367012e9d0d4263ea05);
+            
+        
+
+        marker_8fb3f5ea410d38100b7d69f18bbf59e2.bindPopup(popup_3ff9421b0d2237936f122860507a38b6)
+        ;
+
+        
+    
+    
+            var marker_ff2c1c45329ed261a4d2b643efcef681 = L.marker(
+                [-1.26, 36.793],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_9f9324b99c59ca56b7c75f536ac068b9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44d3f3ab5da2539090f2fd53365de1c8 = $(`<div id="html_44d3f3ab5da2539090f2fd53365de1c8" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 32<br><b>Recent temperature:</b> from 2019-01-28T11:32:03.443420+00:00 to 2019-01-28T11:44:43.363752+00:00<br><b>values:</b> 34.698486328125, 34.49859619140625, 34.19952392578125, 34.09881591796875, 33.79974365234375<br><b>Recent humidity:</b> from 2019-01-28T11:32:03.443420+00:00 to 2019-01-28T11:44:43.363752+00:00<br><b>values:</b> 33.599853515625, 34.2987060546875, 34.3994140625, 35.198974609375, 35.49957275390625<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-01-28T11:32:03.370505+00:00 to 2019-01-28T11:44:43.316908+00:00<br><b>values:</b> 3.3874342346191395, 2.4719114685058585, 2.380359191894531, 4.089335021972655, 2.990707702636718<br><b>Recent P2:</b> from 2019-01-28T11:32:03.370505+00:00 to 2019-01-28T11:44:43.316908+00:00<br><b>values:</b> 0.9765576171874998, 1.3732841491699217, 0.6713833618164061, 1.495353851318359, 1.281731872558593<br></div>`)[0];
+                popup_9f9324b99c59ca56b7c75f536ac068b9.setContent(html_44d3f3ab5da2539090f2fd53365de1c8);
+            
+        
+
+        marker_ff2c1c45329ed261a4d2b643efcef681.bindPopup(popup_9f9324b99c59ca56b7c75f536ac068b9)
+        ;
+
+        
+    
+    
+            var marker_a05d0e119b8a514744112c725af335d7 = L.marker(
+                [-1.26, 36.793],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_cbe9e6b1682ffce9c0c9f56907991a27 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94b04c330b7019c2b7564fa72faa0797 = $(`<div id="html_94b04c330b7019c2b7564fa72faa0797" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 32<br><b>Recent temperature:</b> from 2019-01-28T11:32:03.443420+00:00 to 2019-01-28T11:44:43.363752+00:00<br><b>values:</b> 34.698486328125, 34.49859619140625, 34.19952392578125, 34.09881591796875, 33.79974365234375<br><b>Recent humidity:</b> from 2019-01-28T11:32:03.443420+00:00 to 2019-01-28T11:44:43.363752+00:00<br><b>values:</b> 33.599853515625, 34.2987060546875, 34.3994140625, 35.198974609375, 35.49957275390625<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-01-28T11:32:03.370505+00:00 to 2019-01-28T11:44:43.316908+00:00<br><b>values:</b> 3.3874342346191395, 2.4719114685058585, 2.380359191894531, 4.089335021972655, 2.990707702636718<br><b>Recent P2:</b> from 2019-01-28T11:32:03.370505+00:00 to 2019-01-28T11:44:43.316908+00:00<br><b>values:</b> 0.9765576171874998, 1.3732841491699217, 0.6713833618164061, 1.495353851318359, 1.281731872558593<br></div>`)[0];
+                popup_cbe9e6b1682ffce9c0c9f56907991a27.setContent(html_94b04c330b7019c2b7564fa72faa0797);
+            
+        
+
+        marker_a05d0e119b8a514744112c725af335d7.bindPopup(popup_cbe9e6b1682ffce9c0c9f56907991a27)
+        ;
+
+        
+    
+    
+            var marker_5d2ae80c33e27e0b16c320f492181dc4 = L.marker(
+                [-1.383, 36.939],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_25684c1f03085bb55e26d5c40753ac60 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c781264ef7224434d91fac772258302f = $(`<div id="html_c781264ef7224434d91fac772258302f" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 67<br><b>Recent temperature:</b> from 2019-11-30T23:48:43.860613+00:00 to 2019-11-30T23:59:27.695047+00:00<br><b>values:</b> 17.8, 17.8, 17.8, 17.8, 17.8<br><b>Recent humidity:</b> from 2019-11-30T23:48:43.860613+00:00 to 2019-11-30T23:59:27.695047+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:48:36.854531+00:00 to 2019-11-30T23:59:20.612116+00:00<br><b>values:</b> 8.1, 8.55, 9.3, 8.25, 8.98<br><b>Recent P2:</b> from 2019-11-30T23:48:36.854531+00:00 to 2019-11-30T23:59:20.612116+00:00<br><b>values:</b> 4.55, 4.32, 4.87, 4.97, 4.65<br></div>`)[0];
+                popup_25684c1f03085bb55e26d5c40753ac60.setContent(html_c781264ef7224434d91fac772258302f);
+            
+        
+
+        marker_5d2ae80c33e27e0b16c320f492181dc4.bindPopup(popup_25684c1f03085bb55e26d5c40753ac60)
+        ;
+
+        
+    
+    
+            var marker_a9db9f7d99f4b363fce8e4a7f6c4afbd = L.marker(
+                [-1.383, 36.939],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_6363bc46c5137effc7342dec8f1695da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03782023143c4da719c5ab4efebcc37b = $(`<div id="html_03782023143c4da719c5ab4efebcc37b" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 67<br><b>Recent temperature:</b> from 2019-11-30T23:48:43.860613+00:00 to 2019-11-30T23:59:27.695047+00:00<br><b>values:</b> 17.8, 17.8, 17.8, 17.8, 17.8<br><b>Recent humidity:</b> from 2019-11-30T23:48:43.860613+00:00 to 2019-11-30T23:59:27.695047+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:48:36.854531+00:00 to 2019-11-30T23:59:20.612116+00:00<br><b>values:</b> 8.1, 8.55, 9.3, 8.25, 8.98<br><b>Recent P2:</b> from 2019-11-30T23:48:36.854531+00:00 to 2019-11-30T23:59:20.612116+00:00<br><b>values:</b> 4.55, 4.32, 4.87, 4.97, 4.65<br></div>`)[0];
+                popup_6363bc46c5137effc7342dec8f1695da.setContent(html_03782023143c4da719c5ab4efebcc37b);
+            
+        
+
+        marker_a9db9f7d99f4b363fce8e4a7f6c4afbd.bindPopup(popup_6363bc46c5137effc7342dec8f1695da)
+        ;
+
+        
+    
+    
+            var marker_7870c1b679b4d066e5ac515ef6787305 = L.marker(
+                [-1.376, 36.929],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_c0bb46898f2ef28129156a4d34289f7c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cff5632f9e884decd8895713cf66d668 = $(`<div id="html_cff5632f9e884decd8895713cf66d668" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 68<br><b>Recent temperature:</b> from 2019-11-30T23:49:07.140322+00:00 to 2019-11-30T23:59:47.217385+00:00<br><b>values:</b> 16.8, 16.8, 16.8, 16.8, 16.8<br><b>Recent humidity:</b> from 2019-11-30T23:49:07.140322+00:00 to 2019-11-30T23:59:47.217385+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:49:00.338476+00:00 to 2019-11-30T23:59:40.340344+00:00<br><b>values:</b> 2.7, 1.83, 0.6, 1.47, 2.5<br><b>Recent P2:</b> from 2019-11-30T23:49:00.338476+00:00 to 2019-11-30T23:59:40.340344+00:00<br><b>values:</b> 2.5, 1.37, 0.6, 1.37, 2.3<br></div>`)[0];
+                popup_c0bb46898f2ef28129156a4d34289f7c.setContent(html_cff5632f9e884decd8895713cf66d668);
+            
+        
+
+        marker_7870c1b679b4d066e5ac515ef6787305.bindPopup(popup_c0bb46898f2ef28129156a4d34289f7c)
+        ;
+
+        
+    
+    
+            var marker_b47b7c55c71cd58996359f8a6af8b5ea = L.marker(
+                [-1.376, 36.929],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_cdc156b6a568915cd4b196e0aa679376 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee72ee31f0c6469c1e54577749070b62 = $(`<div id="html_ee72ee31f0c6469c1e54577749070b62" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 68<br><b>Recent temperature:</b> from 2019-11-30T23:49:07.140322+00:00 to 2019-11-30T23:59:47.217385+00:00<br><b>values:</b> 16.8, 16.8, 16.8, 16.8, 16.8<br><b>Recent humidity:</b> from 2019-11-30T23:49:07.140322+00:00 to 2019-11-30T23:59:47.217385+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:49:00.338476+00:00 to 2019-11-30T23:59:40.340344+00:00<br><b>values:</b> 2.7, 1.83, 0.6, 1.47, 2.5<br><b>Recent P2:</b> from 2019-11-30T23:49:00.338476+00:00 to 2019-11-30T23:59:40.340344+00:00<br><b>values:</b> 2.5, 1.37, 0.6, 1.37, 2.3<br></div>`)[0];
+                popup_cdc156b6a568915cd4b196e0aa679376.setContent(html_ee72ee31f0c6469c1e54577749070b62);
+            
+        
+
+        marker_b47b7c55c71cd58996359f8a6af8b5ea.bindPopup(popup_cdc156b6a568915cd4b196e0aa679376)
+        ;
+
+        
+    
+    
+            var marker_0ad06285259adc27255bf92f34da56ba = L.marker(
+                [-1.33, 36.866],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_a0867000b4786f729ff47fa82157d073 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_109b1882ff90614b37ec11745b9b4e7e = $(`<div id="html_109b1882ff90614b37ec11745b9b4e7e" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 69<br><b>Recent temperature:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent humidity:</b> from 2019-09-09T07:51:11.625195+00:00 to 2019-11-06T05:00:45.771555+00:00<br><b>values:</b> 99.99847412109376, 99.99847412109376, 99.99847412109376, 99.99847412109376, 99.99847412109376<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-09-09T07:51:11.559781+00:00 to 2019-11-06T05:00:45.701904+00:00<br><b>values:</b> 23.284795684814448, 17.79165908813476, 18.67666442871093, 27.587752685546867, 42.29715179443358<br><b>Recent P2:</b> from 2019-09-09T07:51:11.559781+00:00 to 2019-11-06T05:00:45.701904+00:00<br><b>values:</b> 5.767793426513671, 8.697466278076169, 7.873495788574217, 6.683316192626951, 12.786801300048824<br></div>`)[0];
+                popup_a0867000b4786f729ff47fa82157d073.setContent(html_109b1882ff90614b37ec11745b9b4e7e);
+            
+        
+
+        marker_0ad06285259adc27255bf92f34da56ba.bindPopup(popup_a0867000b4786f729ff47fa82157d073)
+        ;
+
+        
+    
+    
+            var marker_a304b30d924b6edb4c11b47ae8fab206 = L.marker(
+                [-1.33, 36.866],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_278a008755dc750c27d0aed121d0a405 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2d7e6c14d6d9f9c8394e270eb6d80e8 = $(`<div id="html_d2d7e6c14d6d9f9c8394e270eb6d80e8" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 69<br><b>Recent temperature:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent humidity:</b> from 2019-09-09T07:51:11.625195+00:00 to 2019-11-06T05:00:45.771555+00:00<br><b>values:</b> 99.99847412109376, 99.99847412109376, 99.99847412109376, 99.99847412109376, 99.99847412109376<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-09-09T07:51:11.559781+00:00 to 2019-11-06T05:00:45.701904+00:00<br><b>values:</b> 23.284795684814448, 17.79165908813476, 18.67666442871093, 27.587752685546867, 42.29715179443358<br><b>Recent P2:</b> from 2019-09-09T07:51:11.559781+00:00 to 2019-11-06T05:00:45.701904+00:00<br><b>values:</b> 5.767793426513671, 8.697466278076169, 7.873495788574217, 6.683316192626951, 12.786801300048824<br></div>`)[0];
+                popup_278a008755dc750c27d0aed121d0a405.setContent(html_d2d7e6c14d6d9f9c8394e270eb6d80e8);
+            
+        
+
+        marker_a304b30d924b6edb4c11b47ae8fab206.bindPopup(popup_278a008755dc750c27d0aed121d0a405)
+        ;
+
+        
+    
+    
+            var marker_9e8317dcf02d0badad25af7702f5448f = L.marker(
+                [-1.316, 36.87],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_e9855c391843b2c8f765b34f0df953a3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cb8085b2e0faeb70aa140a1f653c4520 = $(`<div id="html_cb8085b2e0faeb70aa140a1f653c4520" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 37<br><b>Recent temperature:</b> from 2019-11-30T23:47:00.869552+00:00 to 2019-11-30T23:57:42.993613+00:00<br><b>values:</b> 25.299072265625, 25.299072265625, 25.299072265625, 25.299072265625, 25.299072265625<br><b>Recent humidity:</b> from 2019-11-30T23:47:00.869552+00:00 to 2019-11-30T23:57:42.993613+00:00<br><b>values:</b> 59.7991943359375, 59.7991943359375, 59.7991943359375, 59.7991943359375, 59.7991943359375<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:47:00.810927+00:00 to 2019-11-30T23:57:41.990992+00:00<br><b>values:</b> 3.784160766601561, 2.380359191894531, 4.180887298583984, 6.072967681884764, 2.5939811706542963<br><b>Recent P2:</b> from 2019-11-30T23:47:00.810927+00:00 to 2019-11-30T23:57:41.990992+00:00<br><b>values:</b> 2.2888069152832027, 1.8920803833007809, 2.5939811706542963, 2.4719114685058585, 2.2888069152832027<br></div>`)[0];
+                popup_e9855c391843b2c8f765b34f0df953a3.setContent(html_cb8085b2e0faeb70aa140a1f653c4520);
+            
+        
+
+        marker_9e8317dcf02d0badad25af7702f5448f.bindPopup(popup_e9855c391843b2c8f765b34f0df953a3)
+        ;
+
+        
+    
+    
+            var marker_83660ca5ba0bc3546d31f443f7dc27bf = L.marker(
+                [-1.316, 36.87],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_e914646def4fc73f2492d74d0891ce73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a31df1d76bcab8aad9014a75fea63e3 = $(`<div id="html_4a31df1d76bcab8aad9014a75fea63e3" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 37<br><b>Recent temperature:</b> from 2019-11-30T23:47:00.869552+00:00 to 2019-11-30T23:57:42.993613+00:00<br><b>values:</b> 25.299072265625, 25.299072265625, 25.299072265625, 25.299072265625, 25.299072265625<br><b>Recent humidity:</b> from 2019-11-30T23:47:00.869552+00:00 to 2019-11-30T23:57:42.993613+00:00<br><b>values:</b> 59.7991943359375, 59.7991943359375, 59.7991943359375, 59.7991943359375, 59.7991943359375<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T23:47:00.810927+00:00 to 2019-11-30T23:57:41.990992+00:00<br><b>values:</b> 3.784160766601561, 2.380359191894531, 4.180887298583984, 6.072967681884764, 2.5939811706542963<br><b>Recent P2:</b> from 2019-11-30T23:47:00.810927+00:00 to 2019-11-30T23:57:41.990992+00:00<br><b>values:</b> 2.2888069152832027, 1.8920803833007809, 2.5939811706542963, 2.4719114685058585, 2.2888069152832027<br></div>`)[0];
+                popup_e914646def4fc73f2492d74d0891ce73.setContent(html_4a31df1d76bcab8aad9014a75fea63e3);
+            
+        
+
+        marker_83660ca5ba0bc3546d31f443f7dc27bf.bindPopup(popup_e914646def4fc73f2492d74d0891ce73)
+        ;
+
+        
+    
+    
+            var marker_c28c812975a7b862b3612277ed6dd47a = L.marker(
+                [-1.217, 36.776],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_1b6edc59e1a3ca1cbd077548a9c0845a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_927c4dbae68d815eb7d2ebdaa9f9d2c4 = $(`<div id="html_927c4dbae68d815eb7d2ebdaa9f9d2c4" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 50<br><b>Recent temperature:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent humidity:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-12-08T07:32:37.167808+00:00 to 2018-12-08T07:42:39.532078+00:00<br><b>values:</b> 17, 7.95, 15.3, 14.63, 13.35<br><b>Recent P2:</b> from 2018-12-08T07:32:37.167808+00:00 to 2018-12-08T07:42:39.532078+00:00<br><b>values:</b> 8, 6.93, 9.07, 9.38, 7.32<br></div>`)[0];
+                popup_1b6edc59e1a3ca1cbd077548a9c0845a.setContent(html_927c4dbae68d815eb7d2ebdaa9f9d2c4);
+            
+        
+
+        marker_c28c812975a7b862b3612277ed6dd47a.bindPopup(popup_1b6edc59e1a3ca1cbd077548a9c0845a)
+        ;
+
+        
+    
+    
+            var marker_3067b60c98a0f6cf905eac89b30bee05 = L.marker(
+                [-1.217, 36.776],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_7857d468e14f3bb30737fb9f88307548 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bbfc601038a133427a46afc0e0923426 = $(`<div id="html_bbfc601038a133427a46afc0e0923426" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 50<br><b>Recent temperature:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent humidity:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-12-08T07:32:37.167808+00:00 to 2018-12-08T07:42:39.532078+00:00<br><b>values:</b> 17, 7.95, 15.3, 14.63, 13.35<br><b>Recent P2:</b> from 2018-12-08T07:32:37.167808+00:00 to 2018-12-08T07:42:39.532078+00:00<br><b>values:</b> 8, 6.93, 9.07, 9.38, 7.32<br></div>`)[0];
+                popup_7857d468e14f3bb30737fb9f88307548.setContent(html_bbfc601038a133427a46afc0e0923426);
+            
+        
+
+        marker_3067b60c98a0f6cf905eac89b30bee05.bindPopup(popup_7857d468e14f3bb30737fb9f88307548)
+        ;
+
+        
+    
+    
+            var marker_1ae37a71de182e1a1d610ce8b5b49b1e = L.marker(
+                [-1.297, 36.755],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_afd92d15b618dbd6f8d98432225fed70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a22f852531a4cc61ed9059150ecd543e = $(`<div id="html_a22f852531a4cc61ed9059150ecd543e" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 55<br><b>Recent temperature:</b> from 2018-12-26T23:09:17.402205+00:00 to 2018-12-26T23:19:33.182518+00:00<br><b>values:</b> 16.8, 16.8, 16.8, 16.8, 16.9<br><b>Recent humidity:</b> from 2018-12-26T23:09:17.402205+00:00 to 2018-12-26T23:19:33.182518+00:00<br><b>values:</b> 94.4, 94.4, 94.4, 94.2, 94<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-12-26T23:09:15.908582+00:00 to 2018-12-26T23:19:30.147870+00:00<br><b>values:</b> 32.63, 35.47, 41.33, 35.88, 40.75<br><b>Recent P2:</b> from 2018-12-26T23:09:15.908582+00:00 to 2018-12-26T23:19:30.147870+00:00<br><b>values:</b> 18.33, 19.1, 23.9, 22.45, 22.33<br></div>`)[0];
+                popup_afd92d15b618dbd6f8d98432225fed70.setContent(html_a22f852531a4cc61ed9059150ecd543e);
+            
+        
+
+        marker_1ae37a71de182e1a1d610ce8b5b49b1e.bindPopup(popup_afd92d15b618dbd6f8d98432225fed70)
+        ;
+
+        
+    
+    
+            var marker_9e842ca91b6e1a3396e9d4265d224a57 = L.marker(
+                [-1.297, 36.755],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_db2567c8013638b25997a1392e88298e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8b3a998b6d62cf40b8fd7ccbb1bdc4e7 = $(`<div id="html_8b3a998b6d62cf40b8fd7ccbb1bdc4e7" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 55<br><b>Recent temperature:</b> from 2018-12-26T23:09:17.402205+00:00 to 2018-12-26T23:19:33.182518+00:00<br><b>values:</b> 16.8, 16.8, 16.8, 16.8, 16.9<br><b>Recent humidity:</b> from 2018-12-26T23:09:17.402205+00:00 to 2018-12-26T23:19:33.182518+00:00<br><b>values:</b> 94.4, 94.4, 94.4, 94.2, 94<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-12-26T23:09:15.908582+00:00 to 2018-12-26T23:19:30.147870+00:00<br><b>values:</b> 32.63, 35.47, 41.33, 35.88, 40.75<br><b>Recent P2:</b> from 2018-12-26T23:09:15.908582+00:00 to 2018-12-26T23:19:30.147870+00:00<br><b>values:</b> 18.33, 19.1, 23.9, 22.45, 22.33<br></div>`)[0];
+                popup_db2567c8013638b25997a1392e88298e.setContent(html_8b3a998b6d62cf40b8fd7ccbb1bdc4e7);
+            
+        
+
+        marker_9e842ca91b6e1a3396e9d4265d224a57.bindPopup(popup_db2567c8013638b25997a1392e88298e)
+        ;
+
+        
+    
+    
+            var marker_00e9dbeab6d0c6b2ca75045c6079eb0c = L.marker(
+                [-1.316, 36.793],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_efbcca7496472b807bfc3b54f7689e6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_326c1e00efc1494f5c7836fe9c3e252b = $(`<div id="html_326c1e00efc1494f5c7836fe9c3e252b" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 53<br><b>Recent temperature:</b> from 2018-12-10T04:48:40.816504+00:00 to 2018-12-10T06:24:49.707341+00:00<br><b>values:</b> 23.6, 24.2, 24.1, 24.1, 24.1<br><b>Recent humidity:</b> from 2018-12-10T04:48:40.816504+00:00 to 2018-12-10T06:24:49.707341+00:00<br><b>values:</b> 62.1, 57.1, 57.6, 57.1, 57.1<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-12-21T12:27:50.059978+00:00 to 2018-12-21T12:38:59.858573+00:00<br><b>values:</b> 53.08, 95.18, 63.35, 68.97, 50.6<br><b>Recent P2:</b> from 2018-12-21T12:27:50.059978+00:00 to 2018-12-21T12:38:59.858573+00:00<br><b>values:</b> 19.08, 22.6, 22.6, 22.37, 15.77<br></div>`)[0];
+                popup_efbcca7496472b807bfc3b54f7689e6a.setContent(html_326c1e00efc1494f5c7836fe9c3e252b);
+            
+        
+
+        marker_00e9dbeab6d0c6b2ca75045c6079eb0c.bindPopup(popup_efbcca7496472b807bfc3b54f7689e6a)
+        ;
+
+        
+    
+    
+            var marker_31f282efc8eb5b29df3a74e45df3c723 = L.marker(
+                [-1.316, 36.793],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_6f9c5f67653337b1d3cca04775fb9ade = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_caa681cf17783a96bed8c614c30a6026 = $(`<div id="html_caa681cf17783a96bed8c614c30a6026" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 53<br><b>Recent temperature:</b> from 2018-12-10T04:48:40.816504+00:00 to 2018-12-10T06:24:49.707341+00:00<br><b>values:</b> 23.6, 24.2, 24.1, 24.1, 24.1<br><b>Recent humidity:</b> from 2018-12-10T04:48:40.816504+00:00 to 2018-12-10T06:24:49.707341+00:00<br><b>values:</b> 62.1, 57.1, 57.6, 57.1, 57.1<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-12-21T12:27:50.059978+00:00 to 2018-12-21T12:38:59.858573+00:00<br><b>values:</b> 53.08, 95.18, 63.35, 68.97, 50.6<br><b>Recent P2:</b> from 2018-12-21T12:27:50.059978+00:00 to 2018-12-21T12:38:59.858573+00:00<br><b>values:</b> 19.08, 22.6, 22.6, 22.37, 15.77<br></div>`)[0];
+                popup_6f9c5f67653337b1d3cca04775fb9ade.setContent(html_caa681cf17783a96bed8c614c30a6026);
+            
+        
+
+        marker_31f282efc8eb5b29df3a74e45df3c723.bindPopup(popup_6f9c5f67653337b1d3cca04775fb9ade)
+        ;
+
+        
+    
+    
+            var marker_865a86926b40c6825eb86dba86dbf2e7 = L.marker(
+                [-1.365, 36.912],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_8899389501d3947635a25ad9ed96e1c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a675f82c136b53f6753155b214b382e8 = $(`<div id="html_a675f82c136b53f6753155b214b382e8" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 58<br><b>Recent temperature:</b> from 2019-02-02T07:16:27.540287+00:00 to 2019-02-04T09:46:49.640582+00:00<br><b>values:</b> 30.9, 32.2, 36.3, 33.1, 33.6<br><b>Recent humidity:</b> from 2019-02-04T09:00:28.177721+00:00 to 2019-02-04T09:46:49.640582+00:00<br><b>values:</b> 30.9, 36.5, 25.7, 20.8, 29.4<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-02-28T02:40:58.859437+00:00 to 2019-07-08T09:41:13.743385+00:00<br><b>values:</b> 21.73, 39.2, 44.37, 44.17, 41.97<br><b>Recent P2:</b> from 2019-02-28T02:40:58.859437+00:00 to 2019-07-08T09:41:13.743385+00:00<br><b>values:</b> 15.43, 13.8, 13.67, 14.27, 12.9<br></div>`)[0];
+                popup_8899389501d3947635a25ad9ed96e1c4.setContent(html_a675f82c136b53f6753155b214b382e8);
+            
+        
+
+        marker_865a86926b40c6825eb86dba86dbf2e7.bindPopup(popup_8899389501d3947635a25ad9ed96e1c4)
+        ;
+
+        
+    
+    
+            var marker_6d9d53fecd2046a6887fb40926288dc1 = L.marker(
+                [-1.365, 36.912],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_3183da4ec65946b38d64eab1aab3c2f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d0212009a47a6405ebf1f0c453f1e9ec = $(`<div id="html_d0212009a47a6405ebf1f0c453f1e9ec" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 58<br><b>Recent temperature:</b> from 2019-02-02T07:16:27.540287+00:00 to 2019-02-04T09:46:49.640582+00:00<br><b>values:</b> 30.9, 32.2, 36.3, 33.1, 33.6<br><b>Recent humidity:</b> from 2019-02-04T09:00:28.177721+00:00 to 2019-02-04T09:46:49.640582+00:00<br><b>values:</b> 30.9, 36.5, 25.7, 20.8, 29.4<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-02-28T02:40:58.859437+00:00 to 2019-07-08T09:41:13.743385+00:00<br><b>values:</b> 21.73, 39.2, 44.37, 44.17, 41.97<br><b>Recent P2:</b> from 2019-02-28T02:40:58.859437+00:00 to 2019-07-08T09:41:13.743385+00:00<br><b>values:</b> 15.43, 13.8, 13.67, 14.27, 12.9<br></div>`)[0];
+                popup_3183da4ec65946b38d64eab1aab3c2f1.setContent(html_d0212009a47a6405ebf1f0c453f1e9ec);
+            
+        
+
+        marker_6d9d53fecd2046a6887fb40926288dc1.bindPopup(popup_3183da4ec65946b38d64eab1aab3c2f1)
+        ;
+
+        
+    
+    
+            var marker_bbe52617e008c8121580c8612a92971e = L.marker(
+                [-1.291, 36.733],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_62724e6555d3d8798ce98795b900cea9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_612c2f7c1eaf9f60a339675391588058 = $(`<div id="html_612c2f7c1eaf9f60a339675391588058" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 36<br><b>Recent temperature:</b> from 2019-02-07T12:29:03.905202+00:00 to 2019-02-07T12:39:08.673691+00:00<br><b>values:</b> 31.2, 31.2, 31.1, 31, 30.9<br><b>Recent humidity:</b> from 2019-02-07T12:29:03.905202+00:00 to 2019-02-07T12:39:08.673691+00:00<br><b>values:</b> 37.2, 37.5, 38.2, 37.9, 38.4<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-02-07T12:29:02.381137+00:00 to 2019-02-07T12:39:07.175364+00:00<br><b>values:</b> 9.82, 11.73, 9.15, 10.4, 13.25<br><b>Recent P2:</b> from 2019-02-07T12:29:02.381137+00:00 to 2019-02-07T12:39:07.175364+00:00<br><b>values:</b> 3.9, 3.72, 3.2, 3.12, 4<br></div>`)[0];
+                popup_62724e6555d3d8798ce98795b900cea9.setContent(html_612c2f7c1eaf9f60a339675391588058);
+            
+        
+
+        marker_bbe52617e008c8121580c8612a92971e.bindPopup(popup_62724e6555d3d8798ce98795b900cea9)
+        ;
+
+        
+    
+    
+            var marker_20a61ecb1c197cbdeca908f1b1ec3be7 = L.marker(
+                [-1.291, 36.733],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_7c362cac7cfe621598e03960e340cf2d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_292b364a337696778311df826e89edad = $(`<div id="html_292b364a337696778311df826e89edad" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 36<br><b>Recent temperature:</b> from 2019-02-07T12:29:03.905202+00:00 to 2019-02-07T12:39:08.673691+00:00<br><b>values:</b> 31.2, 31.2, 31.1, 31, 30.9<br><b>Recent humidity:</b> from 2019-02-07T12:29:03.905202+00:00 to 2019-02-07T12:39:08.673691+00:00<br><b>values:</b> 37.2, 37.5, 38.2, 37.9, 38.4<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-02-07T12:29:02.381137+00:00 to 2019-02-07T12:39:07.175364+00:00<br><b>values:</b> 9.82, 11.73, 9.15, 10.4, 13.25<br><b>Recent P2:</b> from 2019-02-07T12:29:02.381137+00:00 to 2019-02-07T12:39:07.175364+00:00<br><b>values:</b> 3.9, 3.72, 3.2, 3.12, 4<br></div>`)[0];
+                popup_7c362cac7cfe621598e03960e340cf2d.setContent(html_292b364a337696778311df826e89edad);
+            
+        
+
+        marker_20a61ecb1c197cbdeca908f1b1ec3be7.bindPopup(popup_7c362cac7cfe621598e03960e340cf2d)
+        ;
+
+        
+    
+    
+            var marker_95cbf30e4960c922a71ac8a622fdb3ee = L.marker(
+                [-1.316, 36.872],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_9ba9c92f29b7f97bfdbf6aadc1670be7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_078f352ecda43531b32572c81c805fd3 = $(`<div id="html_078f352ecda43531b32572c81c805fd3" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 57<br><b>Recent temperature:</b> from 2019-05-21T14:43:42.421591+00:00 to 2019-05-23T08:32:15.707878+00:00<br><b>values:</b> 24.8, 24.2, 23.6, 23.4, 23.5<br><b>Recent humidity:</b> from 2019-05-21T14:43:42.421591+00:00 to 2019-05-23T08:32:15.707878+00:00<br><b>values:</b> 56.5, 69.6, 53.6, 53.6, 53.5<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-05-21T15:22:54.753912+00:00 to 2019-05-23T08:25:15.595773+00:00<br><b>values:</b> 6.43, 5.93, 33.35, 9.5, 11.53<br><b>Recent P2:</b> from 2019-05-21T15:22:54.753912+00:00 to 2019-05-23T08:25:15.595773+00:00<br><b>values:</b> 2.67, 2.4, 7.43, 6.03, 5.67<br></div>`)[0];
+                popup_9ba9c92f29b7f97bfdbf6aadc1670be7.setContent(html_078f352ecda43531b32572c81c805fd3);
+            
+        
+
+        marker_95cbf30e4960c922a71ac8a622fdb3ee.bindPopup(popup_9ba9c92f29b7f97bfdbf6aadc1670be7)
+        ;
+
+        
+    
+    
+            var marker_8500ab88b8bce6e328b25233133b64bb = L.marker(
+                [-1.316, 36.872],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_62eb3157ce27b59cdc55a660f73a4667 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec026f5eaa1d63ba97f79257eda05213 = $(`<div id="html_ec026f5eaa1d63ba97f79257eda05213" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 57<br><b>Recent temperature:</b> from 2019-05-21T14:43:42.421591+00:00 to 2019-05-23T08:32:15.707878+00:00<br><b>values:</b> 24.8, 24.2, 23.6, 23.4, 23.5<br><b>Recent humidity:</b> from 2019-05-21T14:43:42.421591+00:00 to 2019-05-23T08:32:15.707878+00:00<br><b>values:</b> 56.5, 69.6, 53.6, 53.6, 53.5<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-05-21T15:22:54.753912+00:00 to 2019-05-23T08:25:15.595773+00:00<br><b>values:</b> 6.43, 5.93, 33.35, 9.5, 11.53<br><b>Recent P2:</b> from 2019-05-21T15:22:54.753912+00:00 to 2019-05-23T08:25:15.595773+00:00<br><b>values:</b> 2.67, 2.4, 7.43, 6.03, 5.67<br></div>`)[0];
+                popup_62eb3157ce27b59cdc55a660f73a4667.setContent(html_ec026f5eaa1d63ba97f79257eda05213);
+            
+        
+
+        marker_8500ab88b8bce6e328b25233133b64bb.bindPopup(popup_62eb3157ce27b59cdc55a660f73a4667)
+        ;
+
+        
+    
+    
+            var marker_7fcc465a5376afe0a31780daaafd9232 = L.marker(
+                [-1.291, 36.658],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_b4c82e3a455c282c78267d31f46b5371 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_955cc44c20b17630f8ccfbd2159c85de = $(`<div id="html_955cc44c20b17630f8ccfbd2159c85de" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 17<br><b>Recent temperature:</b> from 2018-07-25T08:38:40.797338+00:00 to 2018-07-25T08:48:44.897346+00:00<br><b>values:</b> 19, 19, 18.9, 18.9, 18.9<br><b>Recent humidity:</b> from 2018-07-25T08:38:40.797338+00:00 to 2018-07-25T08:48:44.897346+00:00<br><b>values:</b> 64, 64.1, 64.1, 65.1, 64.1<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-07-25T08:38:39.208629+00:00 to 2018-07-25T08:48:43.447914+00:00<br><b>values:</b> 65.03, 85.57, 67.1, 75.53, 68.17<br><b>Recent P2:</b> from 2018-07-25T08:38:39.208629+00:00 to 2018-07-25T08:48:43.447914+00:00<br><b>values:</b> 17.3, 18.77, 18.93, 16.83, 15.97<br></div>`)[0];
+                popup_b4c82e3a455c282c78267d31f46b5371.setContent(html_955cc44c20b17630f8ccfbd2159c85de);
+            
+        
+
+        marker_7fcc465a5376afe0a31780daaafd9232.bindPopup(popup_b4c82e3a455c282c78267d31f46b5371)
+        ;
+
+        
+    
+    
+            var marker_9da9b15da4e912697dc9f8523a8d5657 = L.marker(
+                [-1.291, 36.658],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_5ba2718c0ebc550d2846176e153fa3c4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6cd05c79de515388f808cf528334cad0 = $(`<div id="html_6cd05c79de515388f808cf528334cad0" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 17<br><b>Recent temperature:</b> from 2018-07-25T08:38:40.797338+00:00 to 2018-07-25T08:48:44.897346+00:00<br><b>values:</b> 19, 19, 18.9, 18.9, 18.9<br><b>Recent humidity:</b> from 2018-07-25T08:38:40.797338+00:00 to 2018-07-25T08:48:44.897346+00:00<br><b>values:</b> 64, 64.1, 64.1, 65.1, 64.1<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-07-25T08:38:39.208629+00:00 to 2018-07-25T08:48:43.447914+00:00<br><b>values:</b> 65.03, 85.57, 67.1, 75.53, 68.17<br><b>Recent P2:</b> from 2018-07-25T08:38:39.208629+00:00 to 2018-07-25T08:48:43.447914+00:00<br><b>values:</b> 17.3, 18.77, 18.93, 16.83, 15.97<br></div>`)[0];
+                popup_5ba2718c0ebc550d2846176e153fa3c4.setContent(html_6cd05c79de515388f808cf528334cad0);
+            
+        
+
+        marker_9da9b15da4e912697dc9f8523a8d5657.bindPopup(popup_5ba2718c0ebc550d2846176e153fa3c4)
+        ;
+
+        
+    
+    
+            var marker_9bb04f181f198ee8206731185c99d13b = L.marker(
+                [-1.207, 36.782],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_33712199c2afacf73390504a7696bdea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_24940fc73beee798f0ab5f1f99afbfce = $(`<div id="html_24940fc73beee798f0ab5f1f99afbfce" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 63<br><b>Recent temperature:</b> from 2019-10-13T18:03:48.455057+00:00 to 2019-10-13T18:18:08.626600+00:00<br><b>values:</b> 21.3, 21.1, 21.1, 21.2, 21.2<br><b>Recent humidity:</b> from 2019-10-13T18:03:48.455057+00:00 to 2019-10-13T18:18:08.626600+00:00<br><b>values:</b> 99, 99.3, 99.5, 99.5, 99.7<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-10-13T18:03:46.600534+00:00 to 2019-10-13T18:17:52.470696+00:00<br><b>values:</b> 56.42, 4.82, 5, 7, 7.45<br><b>Recent P2:</b> from 2019-10-13T18:03:46.600534+00:00 to 2019-10-13T18:17:52.470696+00:00<br><b>values:</b> 48.53, 3.72, 4.4, 5.2, 5<br></div>`)[0];
+                popup_33712199c2afacf73390504a7696bdea.setContent(html_24940fc73beee798f0ab5f1f99afbfce);
+            
+        
+
+        marker_9bb04f181f198ee8206731185c99d13b.bindPopup(popup_33712199c2afacf73390504a7696bdea)
+        ;
+
+        
+    
+    
+            var marker_188462ff750d64c70b73ebaa8cc87489 = L.marker(
+                [-1.207, 36.782],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_69177ffa3a7af711f5ab68702cb07c4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f4781617c6108284beaff0ea4fd2ec5e = $(`<div id="html_f4781617c6108284beaff0ea4fd2ec5e" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 63<br><b>Recent temperature:</b> from 2019-10-13T18:03:48.455057+00:00 to 2019-10-13T18:18:08.626600+00:00<br><b>values:</b> 21.3, 21.1, 21.1, 21.2, 21.2<br><b>Recent humidity:</b> from 2019-10-13T18:03:48.455057+00:00 to 2019-10-13T18:18:08.626600+00:00<br><b>values:</b> 99, 99.3, 99.5, 99.5, 99.7<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-10-13T18:03:46.600534+00:00 to 2019-10-13T18:17:52.470696+00:00<br><b>values:</b> 56.42, 4.82, 5, 7, 7.45<br><b>Recent P2:</b> from 2019-10-13T18:03:46.600534+00:00 to 2019-10-13T18:17:52.470696+00:00<br><b>values:</b> 48.53, 3.72, 4.4, 5.2, 5<br></div>`)[0];
+                popup_69177ffa3a7af711f5ab68702cb07c4a.setContent(html_f4781617c6108284beaff0ea4fd2ec5e);
+            
+        
+
+        marker_188462ff750d64c70b73ebaa8cc87489.bindPopup(popup_69177ffa3a7af711f5ab68702cb07c4a)
+        ;
+
+        
+    
+    
+            var marker_e8a81bcec2ec8c9e6dbb8c8ad925e825 = L.marker(
+                [-1.207, 36.658],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_1c51db6ea21d93830b8060f482a176c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_39d457ea5eb2280a6b2402c1b73f96bb = $(`<div id="html_39d457ea5eb2280a6b2402c1b73f96bb" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 38<br><b>Recent temperature:</b> from 2018-10-03T17:06:21.400731+00:00 to 2018-10-03T17:17:13.003669+00:00<br><b>values:</b> 17.3, 17.3, 17.3, 17.4, 17.5<br><b>Recent humidity:</b> from 2018-10-03T17:06:21.400731+00:00 to 2018-10-03T17:17:13.003669+00:00<br><b>values:</b> 67.2, 67.3, 67.1, 66.9, 66.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-05-19T18:35:34.887035+00:00 to 2019-05-19T18:48:27.823155+00:00<br><b>values:</b> 8.6, 7.73, 6.5, 6.6, 8.5<br><b>Recent P2:</b> from 2019-05-19T18:35:34.887035+00:00 to 2019-05-19T18:48:27.823155+00:00<br><b>values:</b> 6.23, 7.03, 5.9, 5.1, 7.2<br></div>`)[0];
+                popup_1c51db6ea21d93830b8060f482a176c2.setContent(html_39d457ea5eb2280a6b2402c1b73f96bb);
+            
+        
+
+        marker_e8a81bcec2ec8c9e6dbb8c8ad925e825.bindPopup(popup_1c51db6ea21d93830b8060f482a176c2)
+        ;
+
+        
+    
+    
+            var marker_e019412fe096300acf4796b122d8e0ec = L.marker(
+                [-1.207, 36.658],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_1e784365955391efc5881583b166f96c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e4ef95e3c145d6882c338448ab5db7c9 = $(`<div id="html_e4ef95e3c145d6882c338448ab5db7c9" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 38<br><b>Recent temperature:</b> from 2018-10-03T17:06:21.400731+00:00 to 2018-10-03T17:17:13.003669+00:00<br><b>values:</b> 17.3, 17.3, 17.3, 17.4, 17.5<br><b>Recent humidity:</b> from 2018-10-03T17:06:21.400731+00:00 to 2018-10-03T17:17:13.003669+00:00<br><b>values:</b> 67.2, 67.3, 67.1, 66.9, 66.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-05-19T18:35:34.887035+00:00 to 2019-05-19T18:48:27.823155+00:00<br><b>values:</b> 8.6, 7.73, 6.5, 6.6, 8.5<br><b>Recent P2:</b> from 2019-05-19T18:35:34.887035+00:00 to 2019-05-19T18:48:27.823155+00:00<br><b>values:</b> 6.23, 7.03, 5.9, 5.1, 7.2<br></div>`)[0];
+                popup_1e784365955391efc5881583b166f96c.setContent(html_e4ef95e3c145d6882c338448ab5db7c9);
+            
+        
+
+        marker_e019412fe096300acf4796b122d8e0ec.bindPopup(popup_1e784365955391efc5881583b166f96c)
+        ;
+
+        
+    
+    
+            var marker_40553e46d4aeddf9a8b7271ad1ea79f6 = L.marker(
+                [-1.311, 36.767],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_b251b4f4a7cac7ac753d5e03aac511a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_647669aa5c6b3ea7a7f7986c0ac30023 = $(`<div id="html_647669aa5c6b3ea7a7f7986c0ac30023" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 14<br><b>Recent temperature:</b> from 2017-11-20T19:42:44.772495+00:00 to 2017-11-21T05:29:35.973532+00:00<br><b>values:</b> 23, 22.9, 22.4, 22.9, 23<br><b>Recent humidity:</b> from 2017-11-20T19:42:44.772495+00:00 to 2017-11-21T05:29:35.973532+00:00<br><b>values:</b> 54.4, 55.1, 56.3, 57.9, 58.8<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2017-11-03T09:54:46.503354+00:00 to 2017-11-21T05:32:54.599538+00:00<br><b>values:</b> 20.23, 26.07, 17.47, 11.87, 11.43<br><b>Recent P2:</b> from 2017-11-03T09:54:46.503354+00:00 to 2017-11-21T05:32:54.599538+00:00<br><b>values:</b> 9.53, 11.17, 5.2, 4.8, 4.77<br></div>`)[0];
+                popup_b251b4f4a7cac7ac753d5e03aac511a2.setContent(html_647669aa5c6b3ea7a7f7986c0ac30023);
+            
+        
+
+        marker_40553e46d4aeddf9a8b7271ad1ea79f6.bindPopup(popup_b251b4f4a7cac7ac753d5e03aac511a2)
+        ;
+
+        
+    
+    
+            var marker_48b212cd2e5538e99c771c7860a7bd84 = L.marker(
+                [-1.311, 36.767],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_b18e0e6914dad3c674eca4b1dfd3dc32 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9d34c9b39fe051c8026e10021b3239c = $(`<div id="html_c9d34c9b39fe051c8026e10021b3239c" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 14<br><b>Recent temperature:</b> from 2017-11-20T19:42:44.772495+00:00 to 2017-11-21T05:29:35.973532+00:00<br><b>values:</b> 23, 22.9, 22.4, 22.9, 23<br><b>Recent humidity:</b> from 2017-11-20T19:42:44.772495+00:00 to 2017-11-21T05:29:35.973532+00:00<br><b>values:</b> 54.4, 55.1, 56.3, 57.9, 58.8<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2017-11-03T09:54:46.503354+00:00 to 2017-11-21T05:32:54.599538+00:00<br><b>values:</b> 20.23, 26.07, 17.47, 11.87, 11.43<br><b>Recent P2:</b> from 2017-11-03T09:54:46.503354+00:00 to 2017-11-21T05:32:54.599538+00:00<br><b>values:</b> 9.53, 11.17, 5.2, 4.8, 4.77<br></div>`)[0];
+                popup_b18e0e6914dad3c674eca4b1dfd3dc32.setContent(html_c9d34c9b39fe051c8026e10021b3239c);
+            
+        
+
+        marker_48b212cd2e5538e99c771c7860a7bd84.bindPopup(popup_b18e0e6914dad3c674eca4b1dfd3dc32)
+        ;
+
+        
+    
+    
+            var marker_1aa9291c0045ffa7165e041498dc73af = L.marker(
+                [-1.316, 36.79],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_e7a50fc0812f8a9aeea5e6f5156cb400 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45723373cf688beb2b947731e6a98fe7 = $(`<div id="html_45723373cf688beb2b947731e6a98fe7" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 52<br><b>Recent temperature:</b> from null to 2018-11-01T08:55:39.530637+00:00<br><b>values:</b> 26, 29.1, null, null, null<br><b>Recent humidity:</b> from null to 2018-11-01T08:55:39.530637+00:00<br><b>values:</b> 48.3, 40.9, null, null, null<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-10-30T07:40:15.297301+00:00 to 2018-11-01T08:55:25.799429+00:00<br><b>values:</b> 15.2, 39.3, 34, 43.03, 43.4<br><b>Recent P2:</b> from 2018-10-30T07:49:09.301774+00:00 to 2018-11-01T08:58:25.902935+00:00<br><b>values:</b> 155.35, 6.03, 7.67, 16.97, 22.17<br></div>`)[0];
+                popup_e7a50fc0812f8a9aeea5e6f5156cb400.setContent(html_45723373cf688beb2b947731e6a98fe7);
+            
+        
+
+        marker_1aa9291c0045ffa7165e041498dc73af.bindPopup(popup_e7a50fc0812f8a9aeea5e6f5156cb400)
+        ;
+
+        
+    
+    
+            var marker_162fc43f23fec942b37bff60e90e94cf = L.marker(
+                [-1.316, 36.79],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_edf485b9571c34084090938b9ae20868 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90fb88beb6ca12785e0c87f08651e6a9 = $(`<div id="html_90fb88beb6ca12785e0c87f08651e6a9" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 52<br><b>Recent temperature:</b> from null to 2018-11-01T08:55:39.530637+00:00<br><b>values:</b> 26, 29.1, null, null, null<br><b>Recent humidity:</b> from null to 2018-11-01T08:55:39.530637+00:00<br><b>values:</b> 48.3, 40.9, null, null, null<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-10-30T07:40:15.297301+00:00 to 2018-11-01T08:55:25.799429+00:00<br><b>values:</b> 15.2, 39.3, 34, 43.03, 43.4<br><b>Recent P2:</b> from 2018-10-30T07:49:09.301774+00:00 to 2018-11-01T08:58:25.902935+00:00<br><b>values:</b> 155.35, 6.03, 7.67, 16.97, 22.17<br></div>`)[0];
+                popup_edf485b9571c34084090938b9ae20868.setContent(html_90fb88beb6ca12785e0c87f08651e6a9);
+            
+        
+
+        marker_162fc43f23fec942b37bff60e90e94cf.bindPopup(popup_edf485b9571c34084090938b9ae20868)
+        ;
+
+        
+    
+    
+            var marker_869fcdbf382b9ebc79c536050333e9cc = L.marker(
+                [-1.251, 36.923],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_61ad1e42d5c430b753fc51f04bff03da = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8616f5d5eeb6ee6b2c40c4b68fe7d750 = $(`<div id="html_8616f5d5eeb6ee6b2c40c4b68fe7d750" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 49<br><b>Recent temperature:</b> from 2018-11-29T16:12:40.333381+00:00 to 2018-11-29T16:22:41.053533+00:00<br><b>values:</b> 19.6, 19.7, 19.7, 19.7, 19.7<br><b>Recent humidity:</b> from 2018-11-29T16:12:40.333381+00:00 to 2018-11-29T16:22:41.053533+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-11-29T16:12:38.737551+00:00 to 2018-11-29T16:22:39.201973+00:00<br><b>values:</b> 16.12, 11.75, 15.05, 17.27, 14.13<br><b>Recent P2:</b> from 2018-11-29T16:12:38.737551+00:00 to 2018-11-29T16:22:39.201973+00:00<br><b>values:</b> 9.82, 8.15, 8.15, 7.68, 8.5<br></div>`)[0];
+                popup_61ad1e42d5c430b753fc51f04bff03da.setContent(html_8616f5d5eeb6ee6b2c40c4b68fe7d750);
+            
+        
+
+        marker_869fcdbf382b9ebc79c536050333e9cc.bindPopup(popup_61ad1e42d5c430b753fc51f04bff03da)
+        ;
+
+        
+    
+    
+            var marker_dd8edae461e6d0a8c25320c042b5d691 = L.marker(
+                [-1.251, 36.923],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_97cdd7d3919610af4ab53f02d56b132b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_412ada874778dc7ea3e3dce65e5a3719 = $(`<div id="html_412ada874778dc7ea3e3dce65e5a3719" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 49<br><b>Recent temperature:</b> from 2018-11-29T16:12:40.333381+00:00 to 2018-11-29T16:22:41.053533+00:00<br><b>values:</b> 19.6, 19.7, 19.7, 19.7, 19.7<br><b>Recent humidity:</b> from 2018-11-29T16:12:40.333381+00:00 to 2018-11-29T16:22:41.053533+00:00<br><b>values:</b> 99.9, 99.9, 99.9, 99.9, 99.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-11-29T16:12:38.737551+00:00 to 2018-11-29T16:22:39.201973+00:00<br><b>values:</b> 16.12, 11.75, 15.05, 17.27, 14.13<br><b>Recent P2:</b> from 2018-11-29T16:12:38.737551+00:00 to 2018-11-29T16:22:39.201973+00:00<br><b>values:</b> 9.82, 8.15, 8.15, 7.68, 8.5<br></div>`)[0];
+                popup_97cdd7d3919610af4ab53f02d56b132b.setContent(html_412ada874778dc7ea3e3dce65e5a3719);
+            
+        
+
+        marker_dd8edae461e6d0a8c25320c042b5d691.bindPopup(popup_97cdd7d3919610af4ab53f02d56b132b)
+        ;
+
+        
+    
+    
+            var marker_40b14501a96ce6893b19208c2fc79dce = L.marker(
+                [-1.446, 37.001],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_7097aa8fa7beae06caf6bbe47664e0e2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_65f1c03a9cefcbde37edb62343e9e58c = $(`<div id="html_65f1c03a9cefcbde37edb62343e9e58c" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 70<br><b>Recent temperature:</b> from 2019-11-30T22:20:36.164454+00:00 to 2019-11-30T23:18:41.057157+00:00<br><b>values:</b> 22.2, 22.2, 22.7, 22.7, 22.7<br><b>Recent humidity:</b> from 2019-11-30T22:20:36.164454+00:00 to 2019-11-30T23:18:41.057157+00:00<br><b>values:</b> 92.7, 92.7, 92.1, 92, 91.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T22:20:34.419645+00:00 to 2019-11-30T23:18:39.322682+00:00<br><b>values:</b> 13.1, 9.17, 4.33, 2.6, 10.37<br><b>Recent P2:</b> from 2019-11-30T22:20:34.419645+00:00 to 2019-11-30T23:18:39.322682+00:00<br><b>values:</b> 4, 3.43, 1.57, 1.2, 1.8<br></div>`)[0];
+                popup_7097aa8fa7beae06caf6bbe47664e0e2.setContent(html_65f1c03a9cefcbde37edb62343e9e58c);
+            
+        
+
+        marker_40b14501a96ce6893b19208c2fc79dce.bindPopup(popup_7097aa8fa7beae06caf6bbe47664e0e2)
+        ;
+
+        
+    
+    
+            var marker_b789093a242e79cf8439d3382ab2a845 = L.marker(
+                [-1.446, 37.001],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_8f8dff701119fe2779a2ec1fc0d3a508 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87d7ba47c3f3cde5fe902696fb0435be = $(`<div id="html_87d7ba47c3f3cde5fe902696fb0435be" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 70<br><b>Recent temperature:</b> from 2019-11-30T22:20:36.164454+00:00 to 2019-11-30T23:18:41.057157+00:00<br><b>values:</b> 22.2, 22.2, 22.7, 22.7, 22.7<br><b>Recent humidity:</b> from 2019-11-30T22:20:36.164454+00:00 to 2019-11-30T23:18:41.057157+00:00<br><b>values:</b> 92.7, 92.7, 92.1, 92, 91.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-11-30T22:20:34.419645+00:00 to 2019-11-30T23:18:39.322682+00:00<br><b>values:</b> 13.1, 9.17, 4.33, 2.6, 10.37<br><b>Recent P2:</b> from 2019-11-30T22:20:34.419645+00:00 to 2019-11-30T23:18:39.322682+00:00<br><b>values:</b> 4, 3.43, 1.57, 1.2, 1.8<br></div>`)[0];
+                popup_8f8dff701119fe2779a2ec1fc0d3a508.setContent(html_87d7ba47c3f3cde5fe902696fb0435be);
+            
+        
+
+        marker_b789093a242e79cf8439d3382ab2a845.bindPopup(popup_8f8dff701119fe2779a2ec1fc0d3a508)
+        ;
+
+        
+    
+    
+            var marker_f8b3ee0f5099cfec8b633d78900eda7b = L.marker(
+                [-1.267, 36.8],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_861d0d71aa3a120d85bdd7a9db4b179d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e8d73ec2bcef6bb1623bbea7bf0381a1 = $(`<div id="html_e8d73ec2bcef6bb1623bbea7bf0381a1" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 44<br><b>Recent temperature:</b> from 2018-10-07T04:33:53.624474+00:00 to 2018-10-07T04:44:32.487650+00:00<br><b>values:</b> 20.6, 20.5, 20.3, 20, 19.7<br><b>Recent humidity:</b> from 2018-10-07T04:33:53.624474+00:00 to 2018-10-07T04:44:32.487650+00:00<br><b>values:</b> 69.7, 69, 69.9, 71.2, 72.1<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-10-07T04:33:48.788520+00:00 to 2018-10-07T04:44:27.862960+00:00<br><b>values:</b> 17.2, 23.73, 16.4, 14.43, 16.53<br><b>Recent P2:</b> from 2018-10-07T04:33:48.788520+00:00 to 2018-10-07T04:44:27.862960+00:00<br><b>values:</b> 6.97, 8.2, 6.5, 6.13, 6.57<br></div>`)[0];
+                popup_861d0d71aa3a120d85bdd7a9db4b179d.setContent(html_e8d73ec2bcef6bb1623bbea7bf0381a1);
+            
+        
+
+        marker_f8b3ee0f5099cfec8b633d78900eda7b.bindPopup(popup_861d0d71aa3a120d85bdd7a9db4b179d)
+        ;
+
+        
+    
+    
+            var marker_43d73142774c38dab51ad6c2f7b50846 = L.marker(
+                [-1.267, 36.8],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_cd93293a9cbdba61e50dd7d87b11f549 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6612602795b69fb61a76844fd8b49351 = $(`<div id="html_6612602795b69fb61a76844fd8b49351" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 44<br><b>Recent temperature:</b> from 2018-10-07T04:33:53.624474+00:00 to 2018-10-07T04:44:32.487650+00:00<br><b>values:</b> 20.6, 20.5, 20.3, 20, 19.7<br><b>Recent humidity:</b> from 2018-10-07T04:33:53.624474+00:00 to 2018-10-07T04:44:32.487650+00:00<br><b>values:</b> 69.7, 69, 69.9, 71.2, 72.1<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-10-07T04:33:48.788520+00:00 to 2018-10-07T04:44:27.862960+00:00<br><b>values:</b> 17.2, 23.73, 16.4, 14.43, 16.53<br><b>Recent P2:</b> from 2018-10-07T04:33:48.788520+00:00 to 2018-10-07T04:44:27.862960+00:00<br><b>values:</b> 6.97, 8.2, 6.5, 6.13, 6.57<br></div>`)[0];
+                popup_cd93293a9cbdba61e50dd7d87b11f549.setContent(html_6612602795b69fb61a76844fd8b49351);
+            
+        
+
+        marker_43d73142774c38dab51ad6c2f7b50846.bindPopup(popup_cd93293a9cbdba61e50dd7d87b11f549)
+        ;
+
+        
+    
+    
+            var marker_bda7411b7b739461336c78bd7b674681 = L.marker(
+                [-1.215, 36.862],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_bfe1497f3b3cc0b841389fd8a5659948 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21defb96f0c1a0784e07162aaac36274 = $(`<div id="html_21defb96f0c1a0784e07162aaac36274" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 48<br><b>Recent temperature:</b> from 2018-10-31T08:58:30.609714+00:00 to 2018-10-31T09:25:33.082999+00:00<br><b>values:</b> 28.4, 27.9, 28.2, 28.6, 29.5<br><b>Recent humidity:</b> from 2018-10-31T08:58:30.609714+00:00 to 2018-10-31T09:25:33.082999+00:00<br><b>values:</b> 51.7, 57.6, 51.6, 53.9, 53.1<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-10-31T08:58:29.386835+00:00 to 2018-10-31T09:25:31.772635+00:00<br><b>values:</b> 16.1, 6.93, 19.08, 12.3, 16.45<br><b>Recent P2:</b> from 2018-10-31T08:58:29.386835+00:00 to 2018-10-31T09:25:31.772635+00:00<br><b>values:</b> 13.3, 5.4, 12.13, 8.13, 11.4<br></div>`)[0];
+                popup_bfe1497f3b3cc0b841389fd8a5659948.setContent(html_21defb96f0c1a0784e07162aaac36274);
+            
+        
+
+        marker_bda7411b7b739461336c78bd7b674681.bindPopup(popup_bfe1497f3b3cc0b841389fd8a5659948)
+        ;
+
+        
+    
+    
+            var marker_ff540341b1b44510a183c9568d862185 = L.marker(
+                [-1.215, 36.862],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_c6f4c3326adedf9e07a1a72e74163bd9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ab8dd37cf0fa3ba9c53189d053640ffa = $(`<div id="html_ab8dd37cf0fa3ba9c53189d053640ffa" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 48<br><b>Recent temperature:</b> from 2018-10-31T08:58:30.609714+00:00 to 2018-10-31T09:25:33.082999+00:00<br><b>values:</b> 28.4, 27.9, 28.2, 28.6, 29.5<br><b>Recent humidity:</b> from 2018-10-31T08:58:30.609714+00:00 to 2018-10-31T09:25:33.082999+00:00<br><b>values:</b> 51.7, 57.6, 51.6, 53.9, 53.1<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-10-31T08:58:29.386835+00:00 to 2018-10-31T09:25:31.772635+00:00<br><b>values:</b> 16.1, 6.93, 19.08, 12.3, 16.45<br><b>Recent P2:</b> from 2018-10-31T08:58:29.386835+00:00 to 2018-10-31T09:25:31.772635+00:00<br><b>values:</b> 13.3, 5.4, 12.13, 8.13, 11.4<br></div>`)[0];
+                popup_c6f4c3326adedf9e07a1a72e74163bd9.setContent(html_ab8dd37cf0fa3ba9c53189d053640ffa);
+            
+        
+
+        marker_ff540341b1b44510a183c9568d862185.bindPopup(popup_c6f4c3326adedf9e07a1a72e74163bd9)
+        ;
+
+        
+    
+    
+            var marker_3d6a7e5a3beb45f356de38e5876bc862 = L.marker(
+                [-1.235, 36.854],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_1c12c56499670459ed9882e8b3801679 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db51bb363c142404e761b0ffa63f0fb8 = $(`<div id="html_db51bb363c142404e761b0ffa63f0fb8" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 51<br><b>Recent temperature:</b> from 2018-10-25T17:05:59.654912+00:00 to 2019-09-02T08:08:30.815659+00:00<br><b>values:</b> 21.9, 22, 21.9, 21.8, 22.3<br><b>Recent humidity:</b> from 2018-10-25T17:05:59.654912+00:00 to 2019-09-02T08:08:30.815659+00:00<br><b>values:</b> 69.4, 69.9, 70.5, 71, 67.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-09-02T07:56:45.376367+00:00 to 2019-09-02T08:08:28.203156+00:00<br><b>values:</b> 13.4, 16.8, 24.03, 15.3, 17.93<br><b>Recent P2:</b> from 2019-09-02T07:56:45.376367+00:00 to 2019-09-02T08:08:28.203156+00:00<br><b>values:</b> 9.7, 11.2, 9.87, 9.8, 9.83<br></div>`)[0];
+                popup_1c12c56499670459ed9882e8b3801679.setContent(html_db51bb363c142404e761b0ffa63f0fb8);
+            
+        
+
+        marker_3d6a7e5a3beb45f356de38e5876bc862.bindPopup(popup_1c12c56499670459ed9882e8b3801679)
+        ;
+
+        
+    
+    
+            var marker_db70388a031cb2768acdaa8a5ab8417c = L.marker(
+                [-1.235, 36.854],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_e9e2363883ee2b20d80d2edf8f06f89d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_da7a65936132907ce34b90d825a2eda7 = $(`<div id="html_da7a65936132907ce34b90d825a2eda7" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 51<br><b>Recent temperature:</b> from 2018-10-25T17:05:59.654912+00:00 to 2019-09-02T08:08:30.815659+00:00<br><b>values:</b> 21.9, 22, 21.9, 21.8, 22.3<br><b>Recent humidity:</b> from 2018-10-25T17:05:59.654912+00:00 to 2019-09-02T08:08:30.815659+00:00<br><b>values:</b> 69.4, 69.9, 70.5, 71, 67.9<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-09-02T07:56:45.376367+00:00 to 2019-09-02T08:08:28.203156+00:00<br><b>values:</b> 13.4, 16.8, 24.03, 15.3, 17.93<br><b>Recent P2:</b> from 2019-09-02T07:56:45.376367+00:00 to 2019-09-02T08:08:28.203156+00:00<br><b>values:</b> 9.7, 11.2, 9.87, 9.8, 9.83<br></div>`)[0];
+                popup_e9e2363883ee2b20d80d2edf8f06f89d.setContent(html_da7a65936132907ce34b90d825a2eda7);
+            
+        
+
+        marker_db70388a031cb2768acdaa8a5ab8417c.bindPopup(popup_e9e2363883ee2b20d80d2edf8f06f89d)
+        ;
+
+        
+    
+    
+            var marker_d072179094c6d16ae7bd29a996b02fcd = L.marker(
+                [-1.261, 36.772],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_52c00b71aa820f0f84d4dc659d1b9688 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d5f8db265178a3e582b48b24ae97cdf3 = $(`<div id="html_d5f8db265178a3e582b48b24ae97cdf3" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 71<br><b>Recent temperature:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent humidity:</b> from 2019-10-23T09:34:50.504467+00:00 to 2019-10-23T09:45:33.996059+00:00<br><b>values:</b> 99.99847412109376, 99.99847412109376, 99.99847412109376, 99.99847412109376, 99.99847412109376<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-10-23T09:34:50.444761+00:00 to 2019-10-23T09:45:33.902203+00:00<br><b>values:</b> 1.8920803833007809, 3.173812255859374, 4.486061553955077, 3.082259979248046, 3.8757130432128895<br><b>Recent P2:</b> from 2019-10-23T09:34:50.444761+00:00 to 2019-10-23T09:45:33.902203+00:00<br><b>values:</b> 1.7700106811523433, 2.777085723876952, 2.777085723876952, 2.89915542602539, 3.478986511230468<br></div>`)[0];
+                popup_52c00b71aa820f0f84d4dc659d1b9688.setContent(html_d5f8db265178a3e582b48b24ae97cdf3);
+            
+        
+
+        marker_d072179094c6d16ae7bd29a996b02fcd.bindPopup(popup_52c00b71aa820f0f84d4dc659d1b9688)
+        ;
+
+        
+    
+    
+            var marker_348679f970185359a76667de901899c4 = L.marker(
+                [-1.261, 36.772],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_deeaab0d5e6595f56ccc6fa319e9c619 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2c320f36f400378907ab08436ebb3190 = $(`<div id="html_2c320f36f400378907ab08436ebb3190" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 71<br><b>Recent temperature:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent humidity:</b> from 2019-10-23T09:34:50.504467+00:00 to 2019-10-23T09:45:33.996059+00:00<br><b>values:</b> 99.99847412109376, 99.99847412109376, 99.99847412109376, 99.99847412109376, 99.99847412109376<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2019-10-23T09:34:50.444761+00:00 to 2019-10-23T09:45:33.902203+00:00<br><b>values:</b> 1.8920803833007809, 3.173812255859374, 4.486061553955077, 3.082259979248046, 3.8757130432128895<br><b>Recent P2:</b> from 2019-10-23T09:34:50.444761+00:00 to 2019-10-23T09:45:33.902203+00:00<br><b>values:</b> 1.7700106811523433, 2.777085723876952, 2.777085723876952, 2.89915542602539, 3.478986511230468<br></div>`)[0];
+                popup_deeaab0d5e6595f56ccc6fa319e9c619.setContent(html_2c320f36f400378907ab08436ebb3190);
+            
+        
+
+        marker_348679f970185359a76667de901899c4.bindPopup(popup_deeaab0d5e6595f56ccc6fa319e9c619)
+        ;
+
+        
+    
+    
+            var marker_19f8f72f9a0a0ac21f00cc7ecc9f39e0 = L.marker(
+                [-1.22, 36.879],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_fe55fd807e57b557c170b14b4256f4aa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_73b981d546b9bbd941d6ef0f2b2fa277 = $(`<div id="html_73b981d546b9bbd941d6ef0f2b2fa277" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 43<br><b>Recent temperature:</b> from 2018-09-24T05:53:46.465117+00:00 to 2018-09-24T06:03:56.642117+00:00<br><b>values:</b> 20.9991455078125, 20.89996337890625, 20.9991455078125, 20.89996337890625, 20.89996337890625<br><b>Recent humidity:</b> from 2018-09-24T05:53:46.465117+00:00 to 2018-09-24T06:03:56.642117+00:00<br><b>values:</b> 57.9986572265625, 57.79876708984375, 57.39898681640625, 57.2998046875, 60.198974609375<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-09-24T05:53:46.419727+00:00 to 2018-09-24T06:03:56.597073+00:00<br><b>values:</b> 22.39979034423828, 11.779726257324215, 31.18880889892577, 14.617846832275388, 12.298522491455074<br><b>Recent P2:</b> from 2018-09-24T05:53:46.419727+00:00 to 2018-09-24T06:03:56.597073+00:00<br><b>values:</b> 7.080042724609373, 7.385216979980466, 8.605914001464841, 6.408659362792967, 7.69039123535156<br></div>`)[0];
+                popup_fe55fd807e57b557c170b14b4256f4aa.setContent(html_73b981d546b9bbd941d6ef0f2b2fa277);
+            
+        
+
+        marker_19f8f72f9a0a0ac21f00cc7ecc9f39e0.bindPopup(popup_fe55fd807e57b557c170b14b4256f4aa)
+        ;
+
+        
+    
+    
+            var marker_31b4f31f6219cb639c6e4519149550af = L.marker(
+                [-1.22, 36.879],
+                {
+}
+            ).addTo(map_8cfab209ac12806938ed952b852e1652);
+        
+    
+        var popup_900172672b0e2153ff7cb15c1744cfa8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_756ea35b53fed00e250af1c33cdcb18e = $(`<div id="html_756ea35b53fed00e250af1c33cdcb18e" style="width: 100.0%; height: 100.0%;"><b>Location:</b> 43<br><b>Recent temperature:</b> from 2018-09-24T05:53:46.465117+00:00 to 2018-09-24T06:03:56.642117+00:00<br><b>values:</b> 20.9991455078125, 20.89996337890625, 20.9991455078125, 20.89996337890625, 20.89996337890625<br><b>Recent humidity:</b> from 2018-09-24T05:53:46.465117+00:00 to 2018-09-24T06:03:56.642117+00:00<br><b>values:</b> 57.9986572265625, 57.79876708984375, 57.39898681640625, 57.2998046875, 60.198974609375<br><b>Recent P0:</b> from null to null<br><b>values:</b> null, null, null, null, null<br><b>Recent P1:</b> from 2018-09-24T05:53:46.419727+00:00 to 2018-09-24T06:03:56.597073+00:00<br><b>values:</b> 22.39979034423828, 11.779726257324215, 31.18880889892577, 14.617846832275388, 12.298522491455074<br><b>Recent P2:</b> from 2018-09-24T05:53:46.419727+00:00 to 2018-09-24T06:03:56.597073+00:00<br><b>values:</b> 7.080042724609373, 7.385216979980466, 8.605914001464841, 6.408659362792967, 7.69039123535156<br></div>`)[0];
+                popup_900172672b0e2153ff7cb15c1744cfa8.setContent(html_756ea35b53fed00e250af1c33cdcb18e);
+            
+        
+
+        marker_31b4f31f6219cb639c6e4519149550af.bindPopup(popup_900172672b0e2153ff7cb15c1744cfa8)
+        ;
+
+        
+    
+</script>
+</html>
